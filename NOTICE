@@ -1,0 +1,14 @@
+Gladys Marées France integration
+Copyright 2026 William Deren
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The addresses of the SHOM tide services and their parameters were read in the
+Home Assistant integration marees_france, Copyright 2025 @KipK, licensed under
+the MIT License (https://github.com/KipK/marees_france). No file of it is
+included.
+
+Tide predictions: © SHOM (Service hydrographique et océanographique de la
+Marine). They are read from the public services of maree.shom.fr at run time;
+test/fixtures holds a few answers recorded for the tests. This community
+integration is not affiliated with, endorsed or sponsored by the SHOM.

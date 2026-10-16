@@ -1,0 +1,3098 @@
+[
+  {
+    "id": "ABIDJAN-VRIDI",
+    "name": "Abidjan",
+    "territory": "Côte d’Ivoire",
+    "lat": 5.254917,
+    "lon": -4.007417,
+    "coefficient": false
+  },
+  {
+    "id": "AGADIR",
+    "name": "Agadir",
+    "territory": "Maroc",
+    "lat": 30.423333,
+    "lon": -9.641667,
+    "coefficient": false
+  },
+  {
+    "id": "AHE_TENUKUPARA",
+    "name": "Ahe",
+    "territory": "Archipel des Tuamotu",
+    "lat": -14.538,
+    "lon": -146.357167,
+    "coefficient": false
+  },
+  {
+    "id": "AJACCIO",
+    "name": "Ajaccio",
+    "territory": null,
+    "lat": 41.922703,
+    "lon": 8.762839,
+    "coefficient": false
+  },
+  {
+    "id": "ALDERNEY_BRAYE",
+    "name": "Alderney (Braye)",
+    "territory": "Îles Anglo-Normandes",
+    "lat": 49.726667,
+    "lon": -2.2,
+    "coefficient": false
+  },
+  {
+    "id": "ALPHA-BAIE_DE_SEINE",
+    "name": "Alpha-Baie de Seine",
+    "territory": null,
+    "lat": 49.859731,
+    "lon": -0.388656,
+    "coefficient": true
+  },
+  {
+    "id": "PRIMEL",
+    "name": "Anse de Primel",
+    "territory": null,
+    "lat": 48.716667,
+    "lon": -3.833333,
+    "coefficient": true
+  },
+  {
+    "id": "ANSE_LONGUE_NAMAOURA",
+    "name": "Anse Longue Namaoura",
+    "territory": "Grande Terre",
+    "lat": -22.14,
+    "lon": 166.218333,
+    "coefficient": false
+  },
+  {
+    "id": "ANTSIRANANA",
+    "name": "Antsiranana",
+    "territory": "Madagascar",
+    "lat": -12.266667,
+    "lon": 49.288833,
+    "coefficient": false
+  },
+  {
+    "id": "ARCACHON_EYRAC",
+    "name": "Arcachon",
+    "territory": null,
+    "lat": 44.664333,
+    "lon": -1.163667,
+    "coefficient": true
+  },
+  {
+    "id": "ARRADON",
+    "name": "Arradon",
+    "territory": null,
+    "lat": 47.615,
+    "lon": -2.83,
+    "coefficient": true
+  },
+  {
+    "id": "ARROMANCHES-LES-BAINS",
+    "name": "Arromanches-les-Bains",
+    "territory": null,
+    "lat": 49.3555,
+    "lon": -0.62,
+    "coefficient": true
+  },
+  {
+    "id": "ARUTUA",
+    "name": "Arutua",
+    "territory": "Archipel des Tuamotu",
+    "lat": -15.366667,
+    "lon": -146.616667,
+    "coefficient": false
+  },
+  {
+    "id": "AUDIERNE",
+    "name": "Audierne (Quai Pelletan)",
+    "territory": null,
+    "lat": 48.02155,
+    "lon": -4.537583,
+    "coefficient": true
+  },
+  {
+    "id": "AURAY_SAINT-GOUSTAN",
+    "name": "Auray (St-Goustan)",
+    "territory": null,
+    "lat": 47.663383,
+    "lon": -2.978117,
+    "coefficient": true
+  },
+  {
+    "id": "AVATORU_LAGON",
+    "name": "Avatoru lagon",
+    "territory": "Archipel des Tuamotu",
+    "lat": -14.95,
+    "lon": -147.7,
+    "coefficient": false
+  },
+  {
+    "id": "BAIE_DE_CHASSELOUP",
+    "name": "Baie Chasseloup",
+    "territory": "Grande Terre",
+    "lat": -20.966333,
+    "lon": 164.66,
+    "coefficient": false
+  },
+  {
+    "id": "BAIE_DE_BANARE_POUM",
+    "name": "Baie de Banaré (Poum)",
+    "territory": "Grande Terre",
+    "lat": -20.226756,
+    "lon": 164.035272,
+    "coefficient": false
+  },
+  {
+    "id": "BAIE_DE_GADJI",
+    "name": "Baie de Gadji",
+    "territory": "Grande Terre",
+    "lat": -22.174119,
+    "lon": 166.388775,
+    "coefficient": false
+  },
+  {
+    "id": "BAIE_DE_GOMEN",
+    "name": "Baie de Gomen",
+    "territory": "Grande Terre",
+    "lat": -20.756667,
+    "lon": 164.401667,
+    "coefficient": false
+  },
+  {
+    "id": "KOUAKOUE",
+    "name": "Baie de Kouakoué",
+    "territory": "Grande Terre",
+    "lat": -21.932833,
+    "lon": 166.669167,
+    "coefficient": false
+  },
+  {
+    "id": "KUTO",
+    "name": "Baie de Kuto",
+    "territory": "Île des Pins",
+    "lat": -22.660333,
+    "lon": 167.437167,
+    "coefficient": false
+  },
+  {
+    "id": "OUESSANT_LAMPAUL",
+    "name": "Baie de Lampaul (Île d'Ouessant)",
+    "territory": null,
+    "lat": 48.45,
+    "lon": -5.1,
+    "coefficient": true
+  },
+  {
+    "id": "RHO",
+    "name": "Baie de Ro",
+    "territory": "Île Maré",
+    "lat": -21.393333,
+    "lon": 167.87,
+    "coefficient": false
+  },
+  {
+    "id": "TADINE",
+    "name": "Baie de Tadine",
+    "territory": "Île Maré",
+    "lat": -21.553333,
+    "lon": 167.88,
+    "coefficient": false
+  },
+  {
+    "id": "TOUHO",
+    "name": "Baie de Touho",
+    "territory": "Grande Terre",
+    "lat": -20.775,
+    "lon": 165.235833,
+    "coefficient": false
+  },
+  {
+    "id": "BAIE_DU_PRONY",
+    "name": "Baie du Prony",
+    "territory": "Grande Terre",
+    "lat": -22.313667,
+    "lon": 166.835667,
+    "coefficient": false
+  },
+  {
+    "id": "BAIE_DU_STIFF",
+    "name": "Baie du Stiff (Île d'Ouessant)",
+    "territory": null,
+    "lat": 48.468018,
+    "lon": -5.054047,
+    "coefficient": true
+  },
+  {
+    "id": "BAIE_HOPEFUL",
+    "name": "Baie Hopeful",
+    "territory": "Îles Kerguelen",
+    "lat": -49.08,
+    "lon": 69.61,
+    "coefficient": false
+  },
+  {
+    "id": "BAIE_LAROSE",
+    "name": "Baie Larose",
+    "territory": "Îles Kerguelen",
+    "lat": -49.585833,
+    "lon": 69.296833,
+    "coefficient": false
+  },
+  {
+    "id": "BAIE_NORVEGIENNE",
+    "name": "Baie Norvégienne",
+    "territory": "Îles Kerguelen",
+    "lat": -49.361667,
+    "lon": 70.351667,
+    "coefficient": false
+  },
+  {
+    "id": "BAIE_OISEAU",
+    "name": "Baie Oiseau",
+    "territory": "Îles Kerguelen",
+    "lat": -48.678333,
+    "lon": 69.027333,
+    "coefficient": false
+  },
+  {
+    "id": "OUARA",
+    "name": "Baie Ouara",
+    "territory": "Grande Terre",
+    "lat": -22.423,
+    "lon": 166.843333,
+    "coefficient": false
+  },
+  {
+    "id": "OUINNE",
+    "name": "Baie Ouinné",
+    "territory": "Grande Terre",
+    "lat": -21.982917,
+    "lon": 166.683333,
+    "coefficient": false
+  },
+  {
+    "id": "BANC_DE_LA_ZELEE",
+    "name": "Banc de la Zélée",
+    "territory": "Îles Éparses",
+    "lat": -12.340767,
+    "lon": 46.311317,
+    "coefficient": false
+  },
+  {
+    "id": "SANDETTIE_EST",
+    "name": "Banc du Sandettié",
+    "territory": null,
+    "lat": 51.25,
+    "lon": 2.05,
+    "coefficient": true
+  },
+  {
+    "id": "VERGOYER_EST",
+    "name": "Banc du Vergoyer",
+    "territory": null,
+    "lat": 50.594167,
+    "lon": 1.330333,
+    "coefficient": true
+  },
+  {
+    "id": "BANYULS",
+    "name": "Banyuls-sur-Mer",
+    "territory": null,
+    "lat": 42.481667,
+    "lon": 3.138167,
+    "coefficient": false
+  },
+  {
+    "id": "BARFLEUR",
+    "name": "Barfleur",
+    "territory": null,
+    "lat": 49.666667,
+    "lon": -1.25,
+    "coefficient": true
+  },
+  {
+    "id": "BASE_DUMONT_D_URVILLE",
+    "name": "Base Dumont d'Urville",
+    "territory": "Terre Adélie",
+    "lat": -66.666667,
+    "lon": 140,
+    "coefficient": false
+  },
+  {
+    "id": "BASSAS_DA_INDIA",
+    "name": "Bassas da India",
+    "territory": "Îles Éparses",
+    "lat": -21.47175,
+    "lon": 39.746033,
+    "coefficient": false
+  },
+  {
+    "id": "BASSE_TERRE",
+    "name": "Basse-Terre",
+    "territory": "Guadeloupe",
+    "lat": 15.9955,
+    "lon": -61.733,
+    "coefficient": false
+  },
+  {
+    "id": "BASTIA",
+    "name": "Bastia",
+    "territory": null,
+    "lat": 42.7,
+    "lon": 9.455,
+    "coefficient": false
+  },
+  {
+    "id": "BENODET",
+    "name": "Bénodet",
+    "territory": null,
+    "lat": 47.881,
+    "lon": -4.115833,
+    "coefficient": true
+  },
+  {
+    "id": "BOUEE_FORT-MAHON",
+    "name": "Berck Plage - Fort Mahon",
+    "territory": null,
+    "lat": 50.341667,
+    "lon": 1.515833,
+    "coefficient": true
+  },
+  {
+    "id": "BEYROUTH",
+    "name": "Beyrouth",
+    "territory": "Liban",
+    "lat": 33.908333,
+    "lon": 35.546667,
+    "coefficient": false
+  },
+  {
+    "id": "BINIC",
+    "name": "Binic",
+    "territory": null,
+    "lat": 48.6,
+    "lon": -2.816667,
+    "coefficient": true
+  },
+  {
+    "id": "BISCARROSSE",
+    "name": "Biscarrosse",
+    "territory": null,
+    "lat": 44.46755,
+    "lon": -1.27075,
+    "coefficient": true
+  },
+  {
+    "id": "BOLAMA",
+    "name": "Bolama",
+    "territory": "Guinée-Bissau",
+    "lat": 11.583333,
+    "lon": -15.483333,
+    "coefficient": false
+  },
+  {
+    "id": "BONIFACIO",
+    "name": "Bonifacio",
+    "territory": null,
+    "lat": 41.389297,
+    "lon": 9.163889,
+    "coefficient": false
+  },
+  {
+    "id": "BOUCAU-BAYONNE",
+    "name": "Boucau-Bayonne",
+    "territory": null,
+    "lat": 43.527222,
+    "lon": -1.514722,
+    "coefficient": true
+  },
+  {
+    "id": "L_ECREVIERE",
+    "name": "Bouée Ecrevière",
+    "territory": "Îles Anglo-Normandes",
+    "lat": 49.255,
+    "lon": -1.868333,
+    "coefficient": false
+  },
+  {
+    "id": "ENTREE_BAIE_DE_SOMME",
+    "name": "Bouée entrée Baie de Somme (AT-SO)",
+    "territory": null,
+    "lat": 50.235231,
+    "lon": 1.472297,
+    "coefficient": true
+  },
+  {
+    "id": "BOUEE_FROMENTINE",
+    "name": "Bouée Fromentine",
+    "territory": null,
+    "lat": 46.8847,
+    "lon": -2.193167,
+    "coefficient": true
+  },
+  {
+    "id": "BOUEE_LE_GOELAND",
+    "name": "Bouée Le Goéland",
+    "territory": null,
+    "lat": 47,
+    "lon": -2.1,
+    "coefficient": true
+  },
+  {
+    "id": "BOUJDOUR",
+    "name": "Boujdour",
+    "territory": "Maroc",
+    "lat": 26.116667,
+    "lon": -14.5,
+    "coefficient": false
+  },
+  {
+    "id": "BOULOGNE-SUR-MER",
+    "name": "Boulogne-sur-Mer",
+    "territory": null,
+    "lat": 50.72745,
+    "lon": 1.5777,
+    "coefficient": true
+  },
+  {
+    "id": "BOURAIL",
+    "name": "Bourail",
+    "territory": "Grande Terre",
+    "lat": -21.623833,
+    "lon": 165.458667,
+    "coefficient": false
+  },
+  {
+    "id": "BREHEC",
+    "name": "Brehec",
+    "territory": null,
+    "lat": 48.7265,
+    "lon": -2.945833,
+    "coefficient": true
+  },
+  {
+    "id": "BREST",
+    "name": "Brest",
+    "territory": null,
+    "lat": 48.3825,
+    "lon": -4.494722,
+    "coefficient": true
+  },
+  {
+    "id": "BRIGNOGAN",
+    "name": "Brignogan-Plage",
+    "territory": null,
+    "lat": 48.6785,
+    "lon": -4.3175,
+    "coefficient": true
+  },
+  {
+    "id": "BUBAQUE",
+    "name": "Bubaque",
+    "territory": "Guinée Bissau",
+    "lat": 11.333333,
+    "lon": -15.866667,
+    "coefficient": false
+  },
+  {
+    "id": "CALAIS",
+    "name": "Calais",
+    "territory": null,
+    "lat": 50.969333,
+    "lon": 1.8675,
+    "coefficient": true
+  },
+  {
+    "id": "CALVI",
+    "name": "Calvi",
+    "territory": null,
+    "lat": 42.566667,
+    "lon": 8.763333,
+    "coefficient": false
+  },
+  {
+    "id": "CAMARET-SUR-MER",
+    "name": "Camaret-sur-Mer",
+    "territory": null,
+    "lat": 48.278333,
+    "lon": -4.59,
+    "coefficient": true
+  },
+  {
+    "id": "CANCALE",
+    "name": "Cancale",
+    "territory": null,
+    "lat": 48.68,
+    "lon": -1.826667,
+    "coefficient": true
+  },
+  {
+    "id": "CAP_CHEVALIER_MARTINIQUE",
+    "name": "Cap Chevalier",
+    "territory": "Martinique",
+    "lat": 14.433333,
+    "lon": -60.833333,
+    "coefficient": false
+  },
+  {
+    "id": "CAP_FERRET",
+    "name": "Cap Ferret",
+    "territory": null,
+    "lat": 44.629167,
+    "lon": -1.241667,
+    "coefficient": true
+  },
+  {
+    "id": "CAPBRETON",
+    "name": "Capbreton",
+    "territory": null,
+    "lat": 43.653667,
+    "lon": -1.437167,
+    "coefficient": true
+  },
+  {
+    "id": "CARTERET",
+    "name": "Carteret",
+    "territory": null,
+    "lat": 49.372833,
+    "lon": -1.787,
+    "coefficient": true
+  },
+  {
+    "id": "CASABLANCA",
+    "name": "Casablanca",
+    "territory": "Maroc",
+    "lat": 33.606667,
+    "lon": -7.61,
+    "coefficient": false
+  },
+  {
+    "id": "CAYEUX-SUR-MER",
+    "name": "Cayeux-sur-Mer",
+    "territory": null,
+    "lat": 50.183333,
+    "lon": 1.483333,
+    "coefficient": true
+  },
+  {
+    "id": "CENTURI",
+    "name": "Centuri",
+    "territory": null,
+    "lat": 42.966,
+    "lon": 9.350167,
+    "coefficient": false
+  },
+  {
+    "id": "CEUTA",
+    "name": "Ceuta",
+    "territory": "Espagne",
+    "lat": 35.883333,
+    "lon": -5.266667,
+    "coefficient": false
+  },
+  {
+    "id": "MORLAIX_PEN_AL_LANN",
+    "name": "Château du Taureau",
+    "territory": null,
+    "lat": 48.683333,
+    "lon": -3.883333,
+    "coefficient": true
+  },
+  {
+    "id": "CHEPENEHE",
+    "name": "Chépénéhé",
+    "territory": "Île Lifou",
+    "lat": -20.781667,
+    "lon": 167.138333,
+    "coefficient": false
+  },
+  {
+    "id": "CHERBOURG",
+    "name": "Cherbourg",
+    "territory": null,
+    "lat": 49.651167,
+    "lon": -1.6355,
+    "coefficient": true
+  },
+  {
+    "id": "CLIPPERTON",
+    "name": "Clipperton",
+    "territory": null,
+    "lat": 10.288167,
+    "lon": -109.204,
+    "coefficient": false
+  },
+  {
+    "id": "CONAKRY",
+    "name": "Conakry",
+    "territory": "Guinée",
+    "lat": 9.516667,
+    "lon": -13.716667,
+    "coefficient": false
+  },
+  {
+    "id": "CONCARNEAU",
+    "name": "Concarneau",
+    "territory": null,
+    "lat": 47.873333,
+    "lon": -3.906667,
+    "coefficient": true
+  },
+  {
+    "id": "CORDOUAN",
+    "name": "Cordouan",
+    "territory": null,
+    "lat": 45.583333,
+    "lon": -1.166667,
+    "coefficient": true
+  },
+  {
+    "id": "COTONOU",
+    "name": "Cotonou",
+    "territory": "Bénin",
+    "lat": 6.35,
+    "lon": 2.433333,
+    "coefficient": false
+  },
+  {
+    "id": "COURSEULLES_LARGE",
+    "name": "Courseulles-sur-Mer (Large)",
+    "territory": null,
+    "lat": 49.4,
+    "lon": -0.466667,
+    "coefficient": true
+  },
+  {
+    "id": "DAHOUET",
+    "name": "Dahouet",
+    "territory": null,
+    "lat": 48.579167,
+    "lon": -2.569333,
+    "coefficient": true
+  },
+  {
+    "id": "DAKAR",
+    "name": "Dakar",
+    "territory": "Sénégal",
+    "lat": 14.6805,
+    "lon": -17.4305,
+    "coefficient": false
+  },
+  {
+    "id": "DAKHLA",
+    "name": "Dakhla",
+    "territory": "Maroc",
+    "lat": 23.6615,
+    "lon": -15.941,
+    "coefficient": false
+  },
+  {
+    "id": "DEGRAD_DES_CANNES",
+    "name": "Dégrad des Cannes",
+    "territory": "Guyane",
+    "lat": 4.854,
+    "lon": -52.2805,
+    "coefficient": false
+  },
+  {
+    "id": "DESHAIES",
+    "name": "Deshaies",
+    "territory": "Guadeloupe",
+    "lat": 16.305,
+    "lon": -61.8,
+    "coefficient": false
+  },
+  {
+    "id": "DIELETTE",
+    "name": "Diélette",
+    "territory": null,
+    "lat": 49.55445,
+    "lon": -1.863883,
+    "coefficient": true
+  },
+  {
+    "id": "DIEPPE",
+    "name": "Dieppe",
+    "territory": null,
+    "lat": 49.93,
+    "lon": 1.085,
+    "coefficient": true
+  },
+  {
+    "id": "DIVES-SUR-MER",
+    "name": "Dives-sur-Mer",
+    "territory": null,
+    "lat": 49.3,
+    "lon": -0.1,
+    "coefficient": true
+  },
+  {
+    "id": "DJIBOUTI",
+    "name": "Djibouti",
+    "territory": "République de Djibouti",
+    "lat": 11.608333,
+    "lon": 43.139444,
+    "coefficient": false
+  },
+  {
+    "id": "DOUALA",
+    "name": "Douala",
+    "territory": "Cameroun",
+    "lat": 4.05,
+    "lon": 9.666667,
+    "coefficient": false
+  },
+  {
+    "id": "DOUARNENEZ",
+    "name": "Douarnenez",
+    "territory": null,
+    "lat": 48.1,
+    "lon": -4.316667,
+    "coefficient": true
+  },
+  {
+    "id": "DOUEOULOU",
+    "name": "Douéoulou",
+    "territory": "Île Lifou",
+    "lat": -20.925,
+    "lon": 167.083333,
+    "coefficient": false
+  },
+  {
+    "id": "DUNKERQUE",
+    "name": "Dunkerque",
+    "territory": null,
+    "lat": 51.05,
+    "lon": 2.366667,
+    "coefficient": true
+  },
+  {
+    "id": "DUNKERQUE_OUEST",
+    "name": "Dunkerque Ouest",
+    "territory": null,
+    "lat": 51.0225,
+    "lon": 2.180833,
+    "coefficient": true
+  },
+  {
+    "id": "DZAOUDZI",
+    "name": "Dzaoudzi",
+    "territory": "Mayotte",
+    "lat": -12.781981,
+    "lon": 45.25815,
+    "coefficient": false
+  },
+  {
+    "id": "MAZAGAN",
+    "name": "El Jadida (Mazagan)",
+    "territory": "Maroc",
+    "lat": 33.266667,
+    "lon": -8.5,
+    "coefficient": false
+  },
+  {
+    "id": "EL_MHIREZ",
+    "name": "El Mhirez",
+    "territory": "Maroc",
+    "lat": 22.1895,
+    "lon": -16.759833,
+    "coefficient": false
+  },
+  {
+    "id": "ENTREE_RIVIERE_ETEL",
+    "name": "Entrée rivière d'Étel",
+    "territory": null,
+    "lat": 47.644167,
+    "lon": -3.211667,
+    "coefficient": true
+  },
+  {
+    "id": "ERQUY_PORT",
+    "name": "Erquy",
+    "territory": null,
+    "lat": 48.639217,
+    "lon": -2.490183,
+    "coefficient": true
+  },
+  {
+    "id": "ESSAOUIRA",
+    "name": "Essaouira (Mogador)",
+    "territory": "Maroc",
+    "lat": 31.505667,
+    "lon": -9.775,
+    "coefficient": false
+  },
+  {
+    "id": "ETRETAT",
+    "name": "Étretat",
+    "territory": null,
+    "lat": 49.713333,
+    "lon": 0.198333,
+    "coefficient": true
+  },
+  {
+    "id": "FANGATAUFA_FREGATE",
+    "name": "Fangataufa (Frégate)",
+    "territory": "Archipel des Tuamotu",
+    "lat": -22.228333,
+    "lon": -138.713333,
+    "coefficient": false
+  },
+  {
+    "id": "FANGATAUFA_LARGE",
+    "name": "Fangataufa (large)",
+    "territory": "Archipel des Tuamotu",
+    "lat": -22.2,
+    "lon": -138.766667,
+    "coefficient": false
+  },
+  {
+    "id": "FARATEA_TARAVAO",
+    "name": "Faratea Taravao",
+    "territory": "Archipel de la Société",
+    "lat": -17.722167,
+    "lon": -149.302833,
+    "coefficient": false
+  },
+  {
+    "id": "FECAMP",
+    "name": "Fécamp",
+    "territory": null,
+    "lat": 49.76235,
+    "lon": 0.36705,
+    "coefficient": true
+  },
+  {
+    "id": "FORT-BOYARD",
+    "name": "Fort Boyard",
+    "territory": null,
+    "lat": 46,
+    "lon": -1.211667,
+    "coefficient": true
+  },
+  {
+    "id": "FORT-ESPAGNOL",
+    "name": "Fort Espagnol",
+    "territory": null,
+    "lat": 47.612333,
+    "lon": -2.953167,
+    "coefficient": true
+  },
+  {
+    "id": "FORT-DE-FRANCE",
+    "name": "Fort-de-France",
+    "territory": "Martinique",
+    "lat": 14.601439,
+    "lon": -61.063294,
+    "coefficient": false
+  },
+  {
+    "id": "FOS_SUR_MER",
+    "name": "Fos-sur-Mer",
+    "territory": null,
+    "lat": 43.416833,
+    "lon": 4.888833,
+    "coefficient": false
+  },
+  {
+    "id": "FOUE",
+    "name": "Foué",
+    "territory": "Grande Terre",
+    "lat": -21.092833,
+    "lon": 164.801,
+    "coefficient": false
+  },
+  {
+    "id": "FROMENTINE_EMBARCADERE",
+    "name": "Fromentine (embarcadère)",
+    "territory": null,
+    "lat": 46.893333,
+    "lon": -2.14,
+    "coefficient": true
+  },
+  {
+    "id": "GORO",
+    "name": "Goro",
+    "territory": "Grande Terre",
+    "lat": -22.307333,
+    "lon": 167.010167,
+    "coefficient": false
+  },
+  {
+    "id": "GOURY",
+    "name": "Goury",
+    "territory": null,
+    "lat": 49.714167,
+    "lon": -1.948667,
+    "coefficient": true
+  },
+  {
+    "id": "GRANDCAMP",
+    "name": "Grandcamp (Entrée chenal de Carentan)",
+    "territory": null,
+    "lat": 49.420179,
+    "lon": -1.086623,
+    "coefficient": true
+  },
+  {
+    "id": "ILES_CHAUSEY",
+    "name": "Grande-Île (Îles Chausey)",
+    "territory": null,
+    "lat": 48.866667,
+    "lon": -1.816667,
+    "coefficient": true
+  },
+  {
+    "id": "GRANVILLE_LE_COCALEU",
+    "name": "Granville",
+    "territory": null,
+    "lat": 48.834167,
+    "lon": -1.644333,
+    "coefficient": true
+  },
+  {
+    "id": "GRAVELINES",
+    "name": "Gravelines",
+    "territory": null,
+    "lat": 51.016667,
+    "lon": 2.1,
+    "coefficient": true
+  },
+  {
+    "id": "ST-PETER_PORT",
+    "name": "Guernsey (St Peter Port)",
+    "territory": "Îles Anglo-Normandes",
+    "lat": 49.45,
+    "lon": -2.516667,
+    "coefficient": false
+  },
+  {
+    "id": "GUSTAVIA",
+    "name": "Gustavia",
+    "territory": null,
+    "lat": 17.90235,
+    "lon": -62.853533,
+    "coefficient": false
+  },
+  {
+    "id": "MOOREA_HAAPITI",
+    "name": "Haapiti",
+    "territory": "Archipel de la Société",
+    "lat": -17.571667,
+    "lon": -149.866667,
+    "coefficient": false
+  },
+  {
+    "id": "HAKAHAU",
+    "name": "Hakahau",
+    "territory": "Îles Marquises",
+    "lat": -9.3575,
+    "lon": -140.046667,
+    "coefficient": false
+  },
+  {
+    "id": "WALLIS_HALALO",
+    "name": "Halalo",
+    "territory": "Îles Wallis",
+    "lat": -13.341667,
+    "lon": -176.225,
+    "coefficient": false
+  },
+  {
+    "id": "HAO_PASSE_KAKI",
+    "name": "Hao (Passe Kaki)",
+    "territory": "Archipel des Tuamotu",
+    "lat": -18.0725,
+    "lon": -141,
+    "coefficient": false
+  },
+  {
+    "id": "HELLVILLE",
+    "name": "Hellville",
+    "territory": "Madagascar",
+    "lat": -13.4,
+    "lon": 48.3,
+    "coefficient": false
+  },
+  {
+    "id": "HENDAYE",
+    "name": "Hendaye",
+    "territory": null,
+    "lat": 43.379333,
+    "lon": -1.784667,
+    "coefficient": true
+  },
+  {
+    "id": "HERQUEVILLE",
+    "name": "Herqueville",
+    "territory": null,
+    "lat": 49.658333,
+    "lon": -1.889167,
+    "coefficient": true
+  },
+  {
+    "id": "HIENGHENE",
+    "name": "Hienghène",
+    "territory": "Grande Terre",
+    "lat": -20.689917,
+    "lon": 164.945,
+    "coefficient": false
+  },
+  {
+    "id": "HOEDIC",
+    "name": "Hoëdic",
+    "territory": null,
+    "lat": 47.3445,
+    "lon": -2.874167,
+    "coefficient": true
+  },
+  {
+    "id": "HOUAT",
+    "name": "Houat",
+    "territory": null,
+    "lat": 47.404,
+    "lon": -2.949667,
+    "coefficient": true
+  },
+  {
+    "id": "ILE_AMEDEE",
+    "name": "Île Amédée",
+    "territory": "Grande Terre",
+    "lat": -22.477,
+    "lon": 166.466167,
+    "coefficient": false
+  },
+  {
+    "id": "ILE_AUX_MOINES_ER_GORED",
+    "name": "Île aux Moines",
+    "territory": null,
+    "lat": 47.585,
+    "lon": -2.857833,
+    "coefficient": true
+  },
+  {
+    "id": "ILE_CROZET",
+    "name": "Ile Crozet",
+    "territory": "TAAF",
+    "lat": -46.416667,
+    "lon": 51.833333,
+    "coefficient": false
+  },
+  {
+    "id": "ILE_D_AIX",
+    "name": "Île d'Aix",
+    "territory": null,
+    "lat": 46.008333,
+    "lon": -1.173333,
+    "coefficient": true
+  },
+  {
+    "id": "BREHAT_MEN_JOLIGUET",
+    "name": "Île de Bréhat",
+    "territory": null,
+    "lat": 48.835167,
+    "lon": -3.003333,
+    "coefficient": true
+  },
+  {
+    "id": "ILE_DE_SEIN_NORD",
+    "name": "Île de Sein",
+    "territory": null,
+    "lat": 48.040167,
+    "lon": -4.8475,
+    "coefficient": true
+  },
+  {
+    "id": "LES_OITELLIERES",
+    "name": "Île des Hébihens",
+    "territory": null,
+    "lat": 48.616667,
+    "lon": -2.21,
+    "coefficient": true
+  },
+  {
+    "id": "EIAO_VAITUHA",
+    "name": "Île Eiao",
+    "territory": "Îles Marquises",
+    "lat": -7.983333,
+    "lon": -140.708333,
+    "coefficient": false
+  },
+  {
+    "id": "ILE_EUROPA",
+    "name": "Île Europa",
+    "territory": "Îles Éparses",
+    "lat": -22.316833,
+    "lon": 40.333333,
+    "coefficient": false
+  },
+  {
+    "id": "ILE_JUAN_DE_NOVA",
+    "name": "Île Juan de Nova",
+    "territory": "Îles Éparses",
+    "lat": -17.0375,
+    "lon": 42.736833,
+    "coefficient": false
+  },
+  {
+    "id": "ILE_KOMAYTOU_LARGE",
+    "name": "Île Komaytou",
+    "territory": "République de Djibouti",
+    "lat": 12.45,
+    "lon": 43.45,
+    "coefficient": false
+  },
+  {
+    "id": "ILE_LONGUE_CHESTERFIELD",
+    "name": "Île Longue",
+    "territory": "Îles Chesterfield",
+    "lat": -19.868333,
+    "lon": 158.311667,
+    "coefficient": false
+  },
+  {
+    "id": "ILE_MIQUELON",
+    "name": "Île Miquelon",
+    "territory": "Saint-Pierre-et-Miquelon",
+    "lat": 47.103833,
+    "lon": -56.373833,
+    "coefficient": false
+  },
+  {
+    "id": "MOLENE_NORD",
+    "name": "Île Molène",
+    "territory": null,
+    "lat": 48.4035,
+    "lon": -4.954667,
+    "coefficient": true
+  },
+  {
+    "id": "SURPRISE",
+    "name": "Île Surprise",
+    "territory": "Récifs D’Entrecasteaux",
+    "lat": -18.479483,
+    "lon": 163.085917,
+    "coefficient": false
+  },
+  {
+    "id": "ILE_ROUSSE",
+    "name": "Île-Rousse",
+    "territory": null,
+    "lat": 42.6395,
+    "lon": 8.936333,
+    "coefficient": false
+  },
+  {
+    "id": "ILES_DU_SALUT",
+    "name": "Îles du Salut",
+    "territory": "Guyane",
+    "lat": 5.2855,
+    "lon": -52.587333,
+    "coefficient": false
+  },
+  {
+    "id": "ILES_GLORIEUSES",
+    "name": "Îles Glorieuses",
+    "territory": "Îles Éparses",
+    "lat": -11.566667,
+    "lon": 47.311667,
+    "coefficient": false
+  },
+  {
+    "id": "ILES_SAINT-MARCOUF",
+    "name": "Îles Saint-Marcouf",
+    "territory": null,
+    "lat": 49.5,
+    "lon": -1.133333,
+    "coefficient": true
+  },
+  {
+    "id": "ILET_LA_MERE",
+    "name": "Îlet la Mère",
+    "territory": "Guyane",
+    "lat": 4.892667,
+    "lon": -52.19,
+    "coefficient": false
+  },
+  {
+    "id": "ILOT_MATO",
+    "name": "Îlot Mato",
+    "territory": "Grande Terre",
+    "lat": -22.552,
+    "lon": 166.786667,
+    "coefficient": false
+  },
+  {
+    "id": "N_DIE",
+    "name": "Îlot N'Dié",
+    "territory": "Grande Terre",
+    "lat": -22.52,
+    "lon": 167.194333,
+    "coefficient": false
+  },
+  {
+    "id": "N_DO",
+    "name": "Îlot N'Do",
+    "territory": "Grande Terre",
+    "lat": -22.683333,
+    "lon": 166.971833,
+    "coefficient": false
+  },
+  {
+    "id": "JORF_LASFAR",
+    "name": "Jorf Lasfar",
+    "territory": "Maroc",
+    "lat": 33.133333,
+    "lon": -8.633333,
+    "coefficient": false
+  },
+  {
+    "id": "KAMSAR",
+    "name": "Kamsar",
+    "territory": "Guinée",
+    "lat": 10.651667,
+    "lon": -14.617833,
+    "coefficient": false
+  },
+  {
+    "id": "KOUMAC",
+    "name": "Koumac",
+    "territory": "Grande Terre",
+    "lat": -20.574333,
+    "lon": 164.275333,
+    "coefficient": false
+  },
+  {
+    "id": "KOUROU",
+    "name": "Kourou",
+    "territory": "Guyane",
+    "lat": 5.156667,
+    "lon": -52.626383,
+    "coefficient": false
+  },
+  {
+    "id": "KSAR_ES_SRHIR",
+    "name": "Ksar es Sghir",
+    "territory": "Maroc",
+    "lat": 35.841983,
+    "lon": -5.570483,
+    "coefficient": false
+  },
+  {
+    "id": "ABER_BENOIT_MEAN_RENEAT",
+    "name": "L'Aber Benoît",
+    "territory": null,
+    "lat": 48.5915,
+    "lon": -4.633333,
+    "coefficient": true
+  },
+  {
+    "id": "LANILDUT",
+    "name": "L'Aber Ildut",
+    "territory": null,
+    "lat": 48.471167,
+    "lon": -4.7545,
+    "coefficient": true
+  },
+  {
+    "id": "ABER_WRAC_H",
+    "name": "L'Aber Wrac'h",
+    "territory": null,
+    "lat": 48.598333,
+    "lon": -4.561667,
+    "coefficient": true
+  },
+  {
+    "id": "AIGUILLON_SUR_MER",
+    "name": "L'Aiguillon-sur-Mer",
+    "territory": null,
+    "lat": 46.335,
+    "lon": -1.316389,
+    "coefficient": true
+  },
+  {
+    "id": "L_HERBAUDIERE",
+    "name": "L'Herbaudière (Île de Noirmoutier)",
+    "territory": null,
+    "lat": 47.026667,
+    "lon": -2.298333,
+    "coefficient": true
+  },
+  {
+    "id": "LA_COTINIERE",
+    "name": "La Cotinière",
+    "territory": null,
+    "lat": 45.914167,
+    "lon": -1.325833,
+    "coefficient": true
+  },
+  {
+    "id": "LA_DESIRADE",
+    "name": "La Désirade",
+    "territory": "Guadeloupe",
+    "lat": 16.302667,
+    "lon": -61.072667,
+    "coefficient": false
+  },
+  {
+    "id": "LA_FIGUEIRETTE",
+    "name": "La Figueirette",
+    "territory": null,
+    "lat": 43.483533,
+    "lon": 6.933767,
+    "coefficient": false
+  },
+  {
+    "id": "LA_PALMYRE",
+    "name": "La Palmyre",
+    "territory": null,
+    "lat": 45.6593,
+    "lon": -1.146183,
+    "coefficient": true
+  },
+  {
+    "id": "LA_ROCHE",
+    "name": "La Roche",
+    "territory": "Île Maré",
+    "lat": -21.461667,
+    "lon": 168.038333,
+    "coefficient": false
+  },
+  {
+    "id": "LA_ROCHELLE-PALLICE",
+    "name": "La Rochelle - La Pallice",
+    "territory": null,
+    "lat": 46.16,
+    "lon": -1.221667,
+    "coefficient": true
+  },
+  {
+    "id": "LA_TRINITE_MARTINIQUE",
+    "name": "La Trinité",
+    "territory": "Martinique",
+    "lat": 14.741167,
+    "lon": -60.9565,
+    "coefficient": false
+  },
+  {
+    "id": "LA_TRINITE-SUR-MER",
+    "name": "La Trinité-sur-Mer",
+    "territory": null,
+    "lat": 47.5875,
+    "lon": -3.025556,
+    "coefficient": true
+  },
+  {
+    "id": "LAAYOUNE",
+    "name": "Laayoune",
+    "territory": "Maroc",
+    "lat": 27.1,
+    "lon": -13.416667,
+    "coefficient": false
+  },
+  {
+    "id": "LACANAU_LARGE",
+    "name": "Lacanau",
+    "territory": null,
+    "lat": 45.038733,
+    "lon": -1.568933,
+    "coefficient": true
+  },
+  {
+    "id": "LARMOR-BADEN",
+    "name": "Larmor-Baden",
+    "territory": null,
+    "lat": 47.581667,
+    "lon": -2.895,
+    "coefficient": true
+  },
+  {
+    "id": "LE_CONQUET",
+    "name": "Le Conquet",
+    "territory": null,
+    "lat": 48.359533,
+    "lon": -4.782833,
+    "coefficient": true
+  },
+  {
+    "id": "LE_CROISIC",
+    "name": "Le Croisic",
+    "territory": null,
+    "lat": 47.3,
+    "lon": -2.516667,
+    "coefficient": true
+  },
+  {
+    "id": "LE_DELLEC",
+    "name": "Le Dellec",
+    "territory": null,
+    "lat": 48.353667,
+    "lon": -4.562,
+    "coefficient": true
+  },
+  {
+    "id": "LE_FRANCOIS",
+    "name": "Le François",
+    "territory": "Martinique",
+    "lat": 14.622333,
+    "lon": -60.888667,
+    "coefficient": false
+  },
+  {
+    "id": "LE_GRAND_CHARPENTIER",
+    "name": "Le Grand Charpentier",
+    "territory": null,
+    "lat": 47.215,
+    "lon": -2.316944,
+    "coefficient": true
+  },
+  {
+    "id": "LE_GUILVINEC",
+    "name": "Le Guilvinec",
+    "territory": null,
+    "lat": 47.794167,
+    "lon": -4.2785,
+    "coefficient": true
+  },
+  {
+    "id": "LE_HAVRE",
+    "name": "Le Havre",
+    "territory": null,
+    "lat": 49.481667,
+    "lon": 0.106167,
+    "coefficient": true
+  },
+  {
+    "id": "ANTIFER",
+    "name": "Le Havre-Antifer (Terminal pétrolier)",
+    "territory": null,
+    "lat": 49.65,
+    "lon": 0.15,
+    "coefficient": true
+  },
+  {
+    "id": "LE_LARIVOT",
+    "name": "Le Larivot",
+    "territory": "Guyane",
+    "lat": 4.905333,
+    "lon": -52.362667,
+    "coefficient": false
+  },
+  {
+    "id": "LE_LEGUE_BOUEE",
+    "name": "Le Légué (Bouée)",
+    "territory": null,
+    "lat": 48.566667,
+    "lon": -2.683333,
+    "coefficient": true
+  },
+  {
+    "id": "LE_LOGEO",
+    "name": "Le Logeo",
+    "territory": null,
+    "lat": 47.547833,
+    "lon": -2.8455,
+    "coefficient": true
+  },
+  {
+    "id": "LE_MARIN",
+    "name": "Le Marin",
+    "territory": "Martinique",
+    "lat": 14.466667,
+    "lon": -60.866667,
+    "coefficient": false
+  },
+  {
+    "id": "LE_PALAIS",
+    "name": "Le Palais (Belle-Île)",
+    "territory": null,
+    "lat": 47.347667,
+    "lon": -3.152167,
+    "coefficient": true
+  },
+  {
+    "id": "LE_POULDU",
+    "name": "Le Pouldu",
+    "territory": null,
+    "lat": 47.762,
+    "lon": -3.542667,
+    "coefficient": true
+  },
+  {
+    "id": "LE_POULIGUEN",
+    "name": "Le Pouliguen",
+    "territory": null,
+    "lat": 47.251667,
+    "lon": -2.403333,
+    "coefficient": true
+  },
+  {
+    "id": "LE_ROBERT",
+    "name": "Le Robert",
+    "territory": "Martinique",
+    "lat": 14.678,
+    "lon": -60.940833,
+    "coefficient": false
+  },
+  {
+    "id": "LE_SENEQUET",
+    "name": "Le Sénéquet",
+    "territory": null,
+    "lat": 49.099,
+    "lon": -1.685167,
+    "coefficient": true
+  },
+  {
+    "id": "LE_TOUQUET",
+    "name": "Le Touquet-Étaples",
+    "territory": null,
+    "lat": 50.5153,
+    "lon": 1.561,
+    "coefficient": true
+  },
+  {
+    "id": "LE_TREPORT",
+    "name": "Le Tréport",
+    "territory": null,
+    "lat": 50.066667,
+    "lon": 1.366667,
+    "coefficient": true
+  },
+  {
+    "id": "LE_VAUCLIN",
+    "name": "Le Vauclin",
+    "territory": "Martinique",
+    "lat": 14.546,
+    "lon": -60.833667,
+    "coefficient": false
+  },
+  {
+    "id": "PTE_DE_GRAVE_LE_VERDON",
+    "name": "Le Verdon-sur-Mer",
+    "territory": null,
+    "lat": 45.546333,
+    "lon": -1.040833,
+    "coefficient": true
+  },
+  {
+    "id": "LEAVA_FUTUNA",
+    "name": "Leava (Futuna)",
+    "territory": "Îles Futuna et Alofi",
+    "lat": -14.296667,
+    "lon": -178.163333,
+    "coefficient": false
+  },
+  {
+    "id": "LES_ARDENTES",
+    "name": "Les Ardentes",
+    "territory": null,
+    "lat": 48.964833,
+    "lon": -1.8605,
+    "coefficient": true
+  },
+  {
+    "id": "LES_HEAUX-DE-BREHAT",
+    "name": "Les Héaux-de-Bréhat",
+    "territory": null,
+    "lat": 48.908144,
+    "lon": -3.083333,
+    "coefficient": true
+  },
+  {
+    "id": "LES_MINQUIERS",
+    "name": "Les Minquiers",
+    "territory": "Îles Anglo-Normandes",
+    "lat": 48.893611,
+    "lon": -2.433333,
+    "coefficient": false
+  },
+  {
+    "id": "ROCHES_DOUVRES",
+    "name": "Les Roches Douvres",
+    "territory": null,
+    "lat": 49.104167,
+    "lon": -2.813333,
+    "coefficient": true
+  },
+  {
+    "id": "LES_SABLES-D_OLONNE",
+    "name": "Les Sables d'Olonne",
+    "territory": null,
+    "lat": 46.4975,
+    "lon": -1.793611,
+    "coefficient": true
+  },
+  {
+    "id": "LESCONIL",
+    "name": "Lesconil",
+    "territory": null,
+    "lat": 47.795167,
+    "lon": -4.211333,
+    "coefficient": true
+  },
+  {
+    "id": "LEZARDRIEUX_PORT",
+    "name": "Lézardrieux",
+    "territory": null,
+    "lat": 48.783333,
+    "lon": -3.1,
+    "coefficient": true
+  },
+  {
+    "id": "LIBREVILLE",
+    "name": "Libreville",
+    "territory": "Gabon",
+    "lat": 0.4,
+    "lon": 9.433333,
+    "coefficient": false
+  },
+  {
+    "id": "LOCMARIAQUER",
+    "name": "Locmariaquer",
+    "territory": null,
+    "lat": 47.57,
+    "lon": -2.93,
+    "coefficient": true
+  },
+  {
+    "id": "LOCQUEMEAU",
+    "name": "Locquemeau",
+    "territory": null,
+    "lat": 48.725,
+    "lon": -3.581667,
+    "coefficient": true
+  },
+  {
+    "id": "LOCQUIREC",
+    "name": "Locquirec",
+    "territory": null,
+    "lat": 48.7,
+    "lon": -3.633333,
+    "coefficient": true
+  },
+  {
+    "id": "LOCTUDY",
+    "name": "Loctudy",
+    "territory": null,
+    "lat": 47.835,
+    "lon": -4.173333,
+    "coefficient": true
+  },
+  {
+    "id": "LOME",
+    "name": "Lomé",
+    "territory": "Togo",
+    "lat": 6.133333,
+    "lon": 1.283333,
+    "coefficient": false
+  },
+  {
+    "id": "LONGONI",
+    "name": "Longoni",
+    "territory": "Mayotte",
+    "lat": -12.724167,
+    "lon": 45.161667,
+    "coefficient": false
+  },
+  {
+    "id": "PORT_COMMERCE_LORIENT",
+    "name": "Lorient (Port de commerce)",
+    "territory": null,
+    "lat": 47.7375,
+    "lon": -3.3545,
+    "coefficient": true
+  },
+  {
+    "id": "MAHAMATE",
+    "name": "Mahamaté",
+    "territory": "Grande Terre",
+    "lat": -20.293667,
+    "lon": 164.484167,
+    "coefficient": false
+  },
+  {
+    "id": "MAKATEA",
+    "name": "Makatea",
+    "territory": "Archipel des Tuamotu",
+    "lat": -15.822778,
+    "lon": -148.280556,
+    "coefficient": false
+  },
+  {
+    "id": "POUHEVA_MAKEMO",
+    "name": "Makemo",
+    "territory": "Archipel des Tuamotu",
+    "lat": -16.628333,
+    "lon": -143.566667,
+    "coefficient": false
+  },
+  {
+    "id": "MARIE-GALANTE_GD_BOURG",
+    "name": "Marie-Galante",
+    "territory": "Guadeloupe",
+    "lat": 15.880167,
+    "lon": -61.317,
+    "coefficient": false
+  },
+  {
+    "id": "MARSEILLE",
+    "name": "Marseille (Corniche)",
+    "territory": null,
+    "lat": 43.278789,
+    "lon": 5.353736,
+    "coefficient": false
+  },
+  {
+    "id": "WALLIS_MATA_UTU",
+    "name": "Mata-Utu",
+    "territory": "Îles Wallis",
+    "lat": -13.285,
+    "lon": -176.17,
+    "coefficient": false
+  },
+  {
+    "id": "MATAVAI",
+    "name": "Matavai",
+    "territory": "Archipel de la Société",
+    "lat": -17.516667,
+    "lon": -149.516667,
+    "coefficient": false
+  },
+  {
+    "id": "MEHDIA",
+    "name": "Mehdia",
+    "territory": "Maroc",
+    "lat": 34.266667,
+    "lon": -6.666667,
+    "coefficient": false
+  },
+  {
+    "id": "MIMIZAN",
+    "name": "Mimizan",
+    "territory": null,
+    "lat": 44.216667,
+    "lon": -1.3,
+    "coefficient": true
+  },
+  {
+    "id": "MOHAMMEDIA",
+    "name": "Mohammedia",
+    "territory": "Maroc",
+    "lat": 33.716667,
+    "lon": -7.4,
+    "coefficient": false
+  },
+  {
+    "id": "MONACO",
+    "name": "Monaco",
+    "territory": "Principauté de Monaco",
+    "lat": 43.732814,
+    "lon": 7.423936,
+    "coefficient": false
+  },
+  {
+    "id": "MORGAT",
+    "name": "Morgat",
+    "territory": null,
+    "lat": 48.2245,
+    "lon": -4.497333,
+    "coefficient": true
+  },
+  {
+    "id": "QUAI_DE_FARE",
+    "name": "Mouillage de Fare",
+    "territory": "Archipel de la Société",
+    "lat": -16.716667,
+    "lon": -151.033333,
+    "coefficient": false
+  },
+  {
+    "id": "BREST_MOULIN-BLANC",
+    "name": "Moulin Blanc",
+    "territory": null,
+    "lat": 48.395,
+    "lon": -4.43,
+    "coefficient": true
+  },
+  {
+    "id": "RECIF_MTITI",
+    "name": "Mtiti",
+    "territory": "Mayotte",
+    "lat": -12.923611,
+    "lon": 45.063333,
+    "coefficient": false
+  },
+  {
+    "id": "NEPOUI",
+    "name": "Mueo (Nepoui)",
+    "territory": "Grande Terre",
+    "lat": -21.3355,
+    "lon": 164.987,
+    "coefficient": false
+  },
+  {
+    "id": "MURUROA_ANEMONE",
+    "name": "Mururoa",
+    "territory": "Polynésie française",
+    "lat": -21.833333,
+    "lon": -138.783333,
+    "coefficient": false
+  },
+  {
+    "id": "NICE",
+    "name": "Nice",
+    "territory": null,
+    "lat": 43.6955,
+    "lon": 7.285267,
+    "coefficient": false
+  },
+  {
+    "id": "NOUADHIBOU",
+    "name": "Nouadhibou",
+    "territory": "Mauritanie",
+    "lat": 20.9,
+    "lon": -17.016667,
+    "coefficient": false
+  },
+  {
+    "id": "NOUAKCHOTT",
+    "name": "Nouakchott",
+    "territory": "Mauritanie",
+    "lat": 17.989333,
+    "lon": -16.036833,
+    "coefficient": false
+  },
+  {
+    "id": "NOUMEA_CHALEIX",
+    "name": "Nouméa - Chaleix",
+    "territory": "Grande Terre",
+    "lat": -22.292,
+    "lon": 166.435,
+    "coefficient": false
+  },
+  {
+    "id": "NOUMEA_NUMBO",
+    "name": "Nouméa - Numbo",
+    "territory": "Nouvelle-Calédonie",
+    "lat": -22.242006,
+    "lon": 166.416108,
+    "coefficient": false
+  },
+  {
+    "id": "SAFI_SUD",
+    "name": "Nouveau Port de Safi",
+    "territory": "Maroc",
+    "lat": 32.1715,
+    "lon": -9.268333,
+    "coefficient": false
+  },
+  {
+    "id": "OMONVILLE-LA-ROGUE",
+    "name": "Omonville-la-Rogue",
+    "territory": null,
+    "lat": 49.713833,
+    "lon": -1.834667,
+    "coefficient": true
+  },
+  {
+    "id": "OUANO",
+    "name": "Ouano",
+    "territory": "Grande Terre",
+    "lat": -21.840833,
+    "lon": 165.81,
+    "coefficient": false
+  },
+  {
+    "id": "OUISTREHAM",
+    "name": "Ouistreham",
+    "territory": null,
+    "lat": 49.283333,
+    "lon": -0.25,
+    "coefficient": true
+  },
+  {
+    "id": "PAAGOUMENE",
+    "name": "Paagoumène",
+    "territory": "Grande Terre",
+    "lat": -20.483611,
+    "lon": 164.175336,
+    "coefficient": false
+  },
+  {
+    "id": "PAIMPOL",
+    "name": "Paimpol",
+    "territory": null,
+    "lat": 48.790333,
+    "lon": -2.955333,
+    "coefficient": true
+  },
+  {
+    "id": "PAPEETE_FARE-UTE",
+    "name": "Papeete",
+    "territory": "Polynésie française",
+    "lat": -17.533333,
+    "lon": -149.57,
+    "coefficient": false
+  },
+  {
+    "id": "MOOREA_PAPETOAI",
+    "name": "Papetoai",
+    "territory": "Archipel de la Société",
+    "lat": -17.491667,
+    "lon": -149.871667,
+    "coefficient": false
+  },
+  {
+    "id": "PENERF",
+    "name": "Pénerf",
+    "territory": null,
+    "lat": 47.514333,
+    "lon": -2.623833,
+    "coefficient": true
+  },
+  {
+    "id": "GLENAN_PENFRET",
+    "name": "Penfret (Îles de Glénan)",
+    "territory": null,
+    "lat": 47.722167,
+    "lon": -3.955,
+    "coefficient": true
+  },
+  {
+    "id": "PERROS-GUIREC_TRESTRAOU",
+    "name": "Perros-Guirec",
+    "territory": null,
+    "lat": 48.82,
+    "lon": -3.458333,
+    "coefficient": true
+  },
+  {
+    "id": "HONFLEUR",
+    "name": "PK 355,850 : Honfleur",
+    "territory": null,
+    "lat": 49.416667,
+    "lon": 0.233333,
+    "coefficient": true
+  },
+  {
+    "id": "BALISE_A",
+    "name": "PK 364,775 : Balise A",
+    "territory": null,
+    "lat": 49.433333,
+    "lon": 0.121667,
+    "coefficient": true
+  },
+  {
+    "id": "PLOGOFF",
+    "name": "Plogoff",
+    "territory": null,
+    "lat": 48.024,
+    "lon": -4.698667,
+    "coefficient": true
+  },
+  {
+    "id": "PLOUMANACH",
+    "name": "Ploumanac'h",
+    "territory": null,
+    "lat": 48.836667,
+    "lon": -3.486,
+    "coefficient": true
+  },
+  {
+    "id": "WHARF_DE_PLUM",
+    "name": "Plum",
+    "territory": "Grande Terre",
+    "lat": -22.28,
+    "lon": 166.638056,
+    "coefficient": false
+  },
+  {
+    "id": "POINGAM",
+    "name": "Poingam",
+    "territory": "Grande Terre",
+    "lat": -20.076667,
+    "lon": 164.025,
+    "coefficient": false
+  },
+  {
+    "id": "POINTE_D_AGON",
+    "name": "Pointe d'Agon",
+    "territory": null,
+    "lat": 48.9885,
+    "lon": -1.621833,
+    "coefficient": true
+  },
+  {
+    "id": "POINTE_DE_GATSEAU",
+    "name": "Pointe de Gatseau",
+    "territory": null,
+    "lat": 45.799167,
+    "lon": -1.236667,
+    "coefficient": true
+  },
+  {
+    "id": "PORT-BLOC",
+    "name": "Pointe de Grave",
+    "territory": null,
+    "lat": 45.568667,
+    "lon": -1.066667,
+    "coefficient": true
+  },
+  {
+    "id": "POINTE-AIGUILLON",
+    "name": "Pointe de l'Aiguillon",
+    "territory": null,
+    "lat": 46.2575,
+    "lon": -1.190833,
+    "coefficient": true
+  },
+  {
+    "id": "POINTE-DE-PANDOP",
+    "name": "Pointe de Pandop",
+    "territory": "Grande Terre",
+    "lat": -20.5805,
+    "lon": 164.2735,
+    "coefficient": false
+  },
+  {
+    "id": "POINTE_DE_SAINT-GILDAS",
+    "name": "Pointe de Saint-Gildas",
+    "territory": null,
+    "lat": 47.14,
+    "lon": -2.246667,
+    "coefficient": true
+  },
+  {
+    "id": "POINTE_DES_GALETS",
+    "name": "Pointe des Galets",
+    "territory": "La Réunion",
+    "lat": -20.935611,
+    "lon": 55.286972,
+    "coefficient": false
+  },
+  {
+    "id": "LES_HATTES",
+    "name": "Pointe Française (Pointe des Hattes)",
+    "territory": "Guyane",
+    "lat": 5.744967,
+    "lon": -53.9533,
+    "coefficient": false
+  },
+  {
+    "id": "POINTE-A-PITRE",
+    "name": "Pointe-à-Pitre",
+    "territory": "Guadeloupe",
+    "lat": 16.224414,
+    "lon": -61.531336,
+    "coefficient": false
+  },
+  {
+    "id": "POINTE_NOIRE",
+    "name": "Pointe-Noire",
+    "territory": "Congo",
+    "lat": -4.783333,
+    "lon": 11.833333,
+    "coefficient": false
+  },
+  {
+    "id": "PONERIHOUEN",
+    "name": "Ponérihouen",
+    "territory": "Grande Terre",
+    "lat": -21.06,
+    "lon": 165.407667,
+    "coefficient": false
+  },
+  {
+    "id": "PONT_SEUDRE",
+    "name": "Pont aval de la Seudre",
+    "territory": null,
+    "lat": 45.799561,
+    "lon": -1.137801,
+    "coefficient": true
+  },
+  {
+    "id": "PORNIC",
+    "name": "Pornic",
+    "territory": null,
+    "lat": 47.109167,
+    "lon": -2.113667,
+    "coefficient": true
+  },
+  {
+    "id": "PORNICHET",
+    "name": "Pornichet",
+    "territory": null,
+    "lat": 47.258333,
+    "lon": -2.346667,
+    "coefficient": true
+  },
+  {
+    "id": "PORO",
+    "name": "Poro",
+    "territory": "Grande Terre",
+    "lat": -21.305,
+    "lon": 165.718333,
+    "coefficient": false
+  },
+  {
+    "id": "PORT-BOISE",
+    "name": "Port Boisé",
+    "territory": "Grande Terre",
+    "lat": -22.348333,
+    "lon": 166.963333,
+    "coefficient": false
+  },
+  {
+    "id": "PORT_CAMARGUE",
+    "name": "Port Camargue",
+    "territory": null,
+    "lat": 43.520333,
+    "lon": 4.126333,
+    "coefficient": false
+  },
+  {
+    "id": "ETEL",
+    "name": "Port d'Étel",
+    "territory": null,
+    "lat": 47.656667,
+    "lon": -3.206667,
+    "coefficient": true
+  },
+  {
+    "id": "PORT_DE_BOULARI",
+    "name": "Port de Boulari",
+    "territory": "Grande Terre",
+    "lat": -22.233333,
+    "lon": 166.525,
+    "coefficient": false
+  },
+  {
+    "id": "PORT_DE_PRONY",
+    "name": "Port de Prony",
+    "territory": "Grande Terre",
+    "lat": -22.348333,
+    "lon": 166.89,
+    "coefficient": false
+  },
+  {
+    "id": "SETE",
+    "name": "Port de Sète",
+    "territory": null,
+    "lat": 43.397642,
+    "lon": 3.699108,
+    "coefficient": false
+  },
+  {
+    "id": "LE_CROUESTY",
+    "name": "Port du Crouesty",
+    "territory": null,
+    "lat": 47.5426,
+    "lon": -2.89495,
+    "coefficient": true
+  },
+  {
+    "id": "PLOGOFF_PORT-DU-VORLEN",
+    "name": "Port du Vorlen",
+    "territory": null,
+    "lat": 48.053,
+    "lon": -4.7125,
+    "coefficient": true
+  },
+  {
+    "id": "PORT_FERREOL",
+    "name": "Port Ferréol",
+    "territory": null,
+    "lat": 43.359067,
+    "lon": 6.7176,
+    "coefficient": false
+  },
+  {
+    "id": "PORT_MANECH",
+    "name": "Port Manec'h",
+    "territory": null,
+    "lat": 47.800833,
+    "lon": -3.7385,
+    "coefficient": true
+  },
+  {
+    "id": "PORT_SONARA",
+    "name": "Port Sonara",
+    "territory": "Cameroun",
+    "lat": 4.005833,
+    "lon": 9.126,
+    "coefficient": false
+  },
+  {
+    "id": "PORT-AUX-FRANCAIS",
+    "name": "Port-aux-Français",
+    "territory": "Îles Kerguelen",
+    "lat": -49.35,
+    "lon": 70.216667,
+    "coefficient": false
+  },
+  {
+    "id": "PORT-BENI",
+    "name": "Port-Béni",
+    "territory": null,
+    "lat": 48.847167,
+    "lon": -3.172333,
+    "coefficient": true
+  },
+  {
+    "id": "PORT-COMBUI",
+    "name": "Port-Combui",
+    "territory": "Grande Terre",
+    "lat": -21.806667,
+    "lon": 166.507167,
+    "coefficient": false
+  },
+  {
+    "id": "PORT_DE_BOUC",
+    "name": "Port-de-Bouc",
+    "territory": null,
+    "lat": 43.398333,
+    "lon": 4.983611,
+    "coefficient": false
+  },
+  {
+    "id": "PORT-EN-BESSIN",
+    "name": "Port-en-Bessin",
+    "territory": null,
+    "lat": 49.351389,
+    "lon": -0.755556,
+    "coefficient": true
+  },
+  {
+    "id": "PORT-GENTIL",
+    "name": "Port-Gentil",
+    "territory": "Gabon",
+    "lat": -0.713333,
+    "lon": 8.79,
+    "coefficient": false
+  },
+  {
+    "id": "PORT-HALIGUEN",
+    "name": "Port-Haliguen",
+    "territory": null,
+    "lat": 47.483333,
+    "lon": -3.1,
+    "coefficient": true
+  },
+  {
+    "id": "PORT-JOINVILLE",
+    "name": "Port-Joinville (Île d'Yeu)",
+    "territory": null,
+    "lat": 46.726667,
+    "lon": -2.348,
+    "coefficient": true
+  },
+  {
+    "id": "PORT_LA_FORET",
+    "name": "Port-la-Forêt",
+    "territory": null,
+    "lat": 47.901,
+    "lon": -3.973833,
+    "coefficient": true
+  },
+  {
+    "id": "PORT_LA_NOUVELLE",
+    "name": "Port-la-Nouvelle",
+    "territory": null,
+    "lat": 43.015278,
+    "lon": 3.061944,
+    "coefficient": false
+  },
+  {
+    "id": "PORT-LOUIS_LOCMALO",
+    "name": "Port-Louis (Locmalo)",
+    "territory": null,
+    "lat": 47.7055,
+    "lon": -3.345333,
+    "coefficient": true
+  },
+  {
+    "id": "PORT-MARIA",
+    "name": "Port-Maria",
+    "territory": null,
+    "lat": 47.48333,
+    "lon": -3.1333,
+    "coefficient": true
+  },
+  {
+    "id": "PORT-MARTIN",
+    "name": "Port-Martin",
+    "territory": "Terre Adélie",
+    "lat": -66.833333,
+    "lon": 141.416667,
+    "coefficient": false
+  },
+  {
+    "id": "PORT-NAVALO",
+    "name": "Port-Navalo",
+    "territory": null,
+    "lat": 47.55,
+    "lon": -2.916667,
+    "coefficient": true
+  },
+  {
+    "id": "PORT-TUDY",
+    "name": "Port-Tudy",
+    "territory": null,
+    "lat": 47.644583,
+    "lon": -3.446306,
+    "coefficient": true
+  },
+  {
+    "id": "PORT-VENDRES",
+    "name": "Port-Vendres",
+    "territory": null,
+    "lat": 42.520044,
+    "lon": 3.107369,
+    "coefficient": false
+  },
+  {
+    "id": "PORTBAIL",
+    "name": "Portbail",
+    "territory": null,
+    "lat": 49.306833,
+    "lon": -1.744667,
+    "coefficient": true
+  },
+  {
+    "id": "PORTIVY",
+    "name": "Portivy",
+    "territory": null,
+    "lat": 47.531333,
+    "lon": -3.147333,
+    "coefficient": true
+  },
+  {
+    "id": "PORTSALL",
+    "name": "Portsall",
+    "territory": null,
+    "lat": 48.566667,
+    "lon": -4.716667,
+    "coefficient": true
+  },
+  {
+    "id": "POUEBO",
+    "name": "Pouébo",
+    "territory": "Grande Terre",
+    "lat": -20.378333,
+    "lon": 164.593333,
+    "coefficient": false
+  },
+  {
+    "id": "POAMBOA",
+    "name": "Pouembout",
+    "territory": "Grande Terre",
+    "lat": -21.116667,
+    "lon": 164.833333,
+    "coefficient": false
+  },
+  {
+    "id": "POYA",
+    "name": "Poya",
+    "territory": "Grande Terre",
+    "lat": -21.403333,
+    "lon": 165.11,
+    "coefficient": false
+  },
+  {
+    "id": "RABAT",
+    "name": "Rabat",
+    "territory": "Maroc",
+    "lat": 34.033333,
+    "lon": -6.833333,
+    "coefficient": false
+  },
+  {
+    "id": "RAIRUA",
+    "name": "Raivavae",
+    "territory": "Polynésie française",
+    "lat": -23.859333,
+    "lon": -147.6855,
+    "coefficient": false
+  },
+  {
+    "id": "RAPA",
+    "name": "Rapa",
+    "territory": "Archipel des Australes",
+    "lat": -27.6145,
+    "lon": -144.320833,
+    "coefficient": false
+  },
+  {
+    "id": "GEYSER",
+    "name": "Récif du Geyser",
+    "territory": "Îles Éparses",
+    "lat": -12.350833,
+    "lon": 46.453333,
+    "coefficient": false
+  },
+  {
+    "id": "RICHARD",
+    "name": "Richard",
+    "territory": null,
+    "lat": 45.453667,
+    "lon": -0.92305,
+    "coefficient": true
+  },
+  {
+    "id": "RIKITEA",
+    "name": "Rikitea",
+    "territory": "Polynésie française",
+    "lat": -23.116667,
+    "lon": -134.966667,
+    "coefficient": false
+  },
+  {
+    "id": "DJOGUE",
+    "name": "Rivière Casamance (Djogué)",
+    "territory": "Sénégal",
+    "lat": 12.566667,
+    "lon": -16.733333,
+    "coefficient": false
+  },
+  {
+    "id": "MAMIE",
+    "name": "Rivière de Mamié (Entrée)",
+    "territory": "Grande Terre",
+    "lat": -22.05,
+    "lon": 166.8925,
+    "coefficient": false
+  },
+  {
+    "id": "ROCHERS_NOIRS",
+    "name": "Rochers Noirs - Tubuai",
+    "territory": "Archipel des Australes",
+    "lat": -23.3405,
+    "lon": -149.475167,
+    "coefficient": false
+  },
+  {
+    "id": "ROSCOFF",
+    "name": "Roscoff",
+    "territory": null,
+    "lat": 48.718694,
+    "lon": -3.965694,
+    "coefficient": true
+  },
+  {
+    "id": "FAKARAVA_ROTOAVA",
+    "name": "Rotoava",
+    "territory": "Archipel des Tuamotu",
+    "lat": -16.055833,
+    "lon": -145.62,
+    "coefficient": false
+  },
+  {
+    "id": "ROYAN",
+    "name": "Royan",
+    "territory": null,
+    "lat": 45.619333,
+    "lon": -1.028,
+    "coefficient": true
+  },
+  {
+    "id": "RUYTINGEN_SW",
+    "name": "Ruytingen",
+    "territory": null,
+    "lat": 51.099167,
+    "lon": 1.780333,
+    "coefficient": true
+  },
+  {
+    "id": "SADA",
+    "name": "Sada - Baie de Chiconi",
+    "territory": "Mayotte",
+    "lat": -12.84,
+    "lon": 45.1,
+    "coefficient": false
+  },
+  {
+    "id": "SAFI",
+    "name": "Safi",
+    "territory": "Maroc",
+    "lat": 32.308333,
+    "lon": -9.25,
+    "coefficient": false
+  },
+  {
+    "id": "SAINT_HELIER",
+    "name": "Saint Helier",
+    "territory": "Îles Anglo-Normandes",
+    "lat": 49.183333,
+    "lon": -2.116667,
+    "coefficient": false
+  },
+  {
+    "id": "PASSAGE_SAINT-ARMEL",
+    "name": "Saint-Armel (Le Passage)",
+    "territory": null,
+    "lat": 47.591333,
+    "lon": -2.715,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT_BRIAC_SUR_MER",
+    "name": "Saint-Briac-sur-Mer",
+    "territory": null,
+    "lat": 48.634,
+    "lon": -2.1685,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT-CAST",
+    "name": "Saint-Cast",
+    "territory": null,
+    "lat": 48.638333,
+    "lon": -2.243333,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT-DENIS_D_OLERON",
+    "name": "Saint-Denis d'Oléron",
+    "territory": null,
+    "lat": 46.036833,
+    "lon": -1.372333,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT-GERMAIN-SUR-AY",
+    "name": "Saint-Germain-sur-Ay",
+    "territory": null,
+    "lat": 49.2,
+    "lon": -1.666667,
+    "coefficient": true
+  },
+  {
+    "id": "ST-GILLES-CROIX-DE-VIE",
+    "name": "Saint-Gilles-Croix-de-Vie",
+    "territory": null,
+    "lat": 46.696667,
+    "lon": -1.9425,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT-GUENOLE",
+    "name": "Saint-Guénolé",
+    "territory": null,
+    "lat": 47.814,
+    "lon": -4.3825,
+    "coefficient": true
+  },
+  {
+    "id": "SOCOA",
+    "name": "Saint-Jean-de-Luz",
+    "territory": null,
+    "lat": 43.395,
+    "lon": -1.681667,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT-LAURENT_DU_MARONI",
+    "name": "Saint-Laurent du Maroni",
+    "territory": "Guyane",
+    "lat": 5.5,
+    "lon": -54.033333,
+    "coefficient": false
+  },
+  {
+    "id": "SAINT-LEU",
+    "name": "Saint-Leu",
+    "territory": "La Réunion",
+    "lat": -21.167667,
+    "lon": 55.285333,
+    "coefficient": false
+  },
+  {
+    "id": "SAINT_LOUIS",
+    "name": "Saint-Louis",
+    "territory": "Sénégal",
+    "lat": 16,
+    "lon": -16.516667,
+    "coefficient": false
+  },
+  {
+    "id": "SAINT-MALO",
+    "name": "Saint-Malo",
+    "territory": null,
+    "lat": 48.641167,
+    "lon": -2.0275,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT-MARTIN_MARIGOT",
+    "name": "Saint-Martin Marigot",
+    "territory": "Saint-Martin",
+    "lat": 18.071,
+    "lon": -63.086667,
+    "coefficient": false
+  },
+  {
+    "id": "SAINT-MARTIN_DE_RE",
+    "name": "Saint-Martin-de-Ré (Île de Ré)",
+    "territory": null,
+    "lat": 46.208,
+    "lon": -1.3655,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT-NAZAIRE",
+    "name": "Saint-Nazaire",
+    "territory": null,
+    "lat": 47.266944,
+    "lon": -2.201667,
+    "coefficient": true
+  },
+  {
+    "id": "ILE_SAINT-PAUL",
+    "name": "Saint-Paul",
+    "territory": "Île Saint-Paul",
+    "lat": -38.716667,
+    "lon": 77.533333,
+    "coefficient": false
+  },
+  {
+    "id": "ILE_SAINT-PIERRE",
+    "name": "Saint-Pierre",
+    "territory": "Saint-Pierre-et-Miquelon",
+    "lat": 46.7855,
+    "lon": -56.1675,
+    "coefficient": false
+  },
+  {
+    "id": "SAINT-PIERRE_LA_REUNION",
+    "name": "Saint-Pierre",
+    "territory": "La Réunion",
+    "lat": -21.345167,
+    "lon": 55.477667,
+    "coefficient": false
+  },
+  {
+    "id": "SAINT-PIERRE_MARTINIQUE",
+    "name": "Saint-Pierre",
+    "territory": "Martinique",
+    "lat": 14.739667,
+    "lon": -61.180333,
+    "coefficient": false
+  },
+  {
+    "id": "SAINT-QUAY-PORTRIEUX",
+    "name": "Saint-Quay-Portrieux",
+    "territory": null,
+    "lat": 48.6475,
+    "lon": -2.818056,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT-VAAST-LA-HOUGUE",
+    "name": "Saint-Vaast-la-Hougue",
+    "territory": null,
+    "lat": 49.587667,
+    "lon": -1.264333,
+    "coefficient": true
+  },
+  {
+    "id": "SAINT-VALERY-EN-CAUX",
+    "name": "Saint-Valery-en-Caux",
+    "territory": null,
+    "lat": 49.883333,
+    "lon": 0.72,
+    "coefficient": true
+  },
+  {
+    "id": "SAINTE_EVETTE",
+    "name": "Sainte Evette",
+    "territory": null,
+    "lat": 48.005667,
+    "lon": -4.554167,
+    "coefficient": true
+  },
+  {
+    "id": "SAINTE_MARIE_LA_REUNION",
+    "name": "Sainte-Marie",
+    "territory": "La Réunion",
+    "lat": -20.892167,
+    "lon": 55.537,
+    "coefficient": false
+  },
+  {
+    "id": "SAN_PEDRO",
+    "name": "San Pedro",
+    "territory": "Côte d’Ivoire",
+    "lat": 4.733333,
+    "lon": -6.610283,
+    "coefficient": false
+  },
+  {
+    "id": "SASSANDRA",
+    "name": "Sassandra",
+    "territory": "Côte d’Ivoire",
+    "lat": 4.95,
+    "lon": -6.083333,
+    "coefficient": false
+  },
+  {
+    "id": "SELAATA",
+    "name": "Selaata",
+    "territory": "Liban",
+    "lat": 34.28475,
+    "lon": 35.652483,
+    "coefficient": false
+  },
+  {
+    "id": "SFAX",
+    "name": "Sfax",
+    "territory": "Tunisie",
+    "lat": 34.733333,
+    "lon": 10.766667,
+    "coefficient": false
+  },
+  {
+    "id": "SOLENZARA",
+    "name": "Solenzara",
+    "territory": null,
+    "lat": 41.8568,
+    "lon": 9.403817,
+    "coefficient": false
+  },
+  {
+    "id": "SOUR",
+    "name": "Sour",
+    "territory": "Liban",
+    "lat": 33.274167,
+    "lon": 35.2,
+    "coefficient": false
+  },
+  {
+    "id": "TAHANEA",
+    "name": "Tahanea",
+    "territory": "Archipel des Tuamotu",
+    "lat": -16.866667,
+    "lon": -144.666667,
+    "coefficient": false
+  },
+  {
+    "id": "TAIOHAE_SHOM",
+    "name": "Taiohae",
+    "territory": "Polynésie française",
+    "lat": -8.916667,
+    "lon": -140.1,
+    "coefficient": false
+  },
+  {
+    "id": "TAMAJARUSH",
+    "name": "Tamajarush",
+    "territory": "Maroc",
+    "lat": 29.55,
+    "lon": -10.066667,
+    "coefficient": false
+  },
+  {
+    "id": "TAN-TAN",
+    "name": "Tan-Tan",
+    "territory": "Maroc",
+    "lat": 28.5,
+    "lon": -11.35,
+    "coefficient": false
+  },
+  {
+    "id": "TANGER",
+    "name": "Tanger",
+    "territory": "Maroc",
+    "lat": 35.783333,
+    "lon": -5.8,
+    "coefficient": false
+  },
+  {
+    "id": "TANGER_MED",
+    "name": "Tanger Med",
+    "territory": "Maroc",
+    "lat": 35.9,
+    "lon": -5.483333,
+    "coefficient": false
+  },
+  {
+    "id": "TAO",
+    "name": "Tao",
+    "territory": "Grande Terre",
+    "lat": -20.560833,
+    "lon": 164.808333,
+    "coefficient": false
+  },
+  {
+    "id": "TARFAYA",
+    "name": "Tarfaya",
+    "territory": "Maroc",
+    "lat": 27.941944,
+    "lon": -12.935472,
+    "coefficient": false
+  },
+  {
+    "id": "TARIFA",
+    "name": "Tarifa",
+    "territory": "Espagne",
+    "lat": 36,
+    "lon": -5.6,
+    "coefficient": false
+  },
+  {
+    "id": "TAUTIRA",
+    "name": "Tautira",
+    "territory": "Archipel de la Société",
+    "lat": -17.755167,
+    "lon": -149.156667,
+    "coefficient": false
+  },
+  {
+    "id": "TEAVAROA",
+    "name": "Teavaroa",
+    "territory": "Archipel des Tuamotu",
+    "lat": -14.474667,
+    "lon": -145.037167,
+    "coefficient": false
+  },
+  {
+    "id": "TEHERE",
+    "name": "Tehere",
+    "territory": "Archipel des Tuamotu",
+    "lat": -15.316667,
+    "lon": -146.4,
+    "coefficient": false
+  },
+  {
+    "id": "FAKARAVA_TETAMANU",
+    "name": "Tetamanu",
+    "territory": "Archipel des Tuamotu",
+    "lat": -16.5,
+    "lon": -145.466667,
+    "coefficient": false
+  },
+  {
+    "id": "THIO",
+    "name": "Thio",
+    "territory": "Nouvelle-Calédonie",
+    "lat": -21.612833,
+    "lon": 166.248333,
+    "coefficient": false
+  },
+  {
+    "id": "TIBARAMA",
+    "name": "Tibarama",
+    "territory": "Grande Terre",
+    "lat": -20.933083,
+    "lon": 165.371833,
+    "coefficient": false
+  },
+  {
+    "id": "TIGA",
+    "name": "Tiga",
+    "territory": "Île Tiga",
+    "lat": -21.1,
+    "lon": 167.798333,
+    "coefficient": false
+  },
+  {
+    "id": "TINDUFF",
+    "name": "Tinduff",
+    "territory": null,
+    "lat": 48.335833,
+    "lon": -4.3675,
+    "coefficient": true
+  },
+  {
+    "id": "TOAMASINA",
+    "name": "Toamasina",
+    "territory": "Madagascar",
+    "lat": -18.16,
+    "lon": 49.426667,
+    "coefficient": false
+  },
+  {
+    "id": "TOAU",
+    "name": "Toau",
+    "territory": "Archipel des Tuamotu",
+    "lat": -15.866667,
+    "lon": -145.916667,
+    "coefficient": false
+  },
+  {
+    "id": "TOLIARA",
+    "name": "Toliara",
+    "territory": "Madagascar",
+    "lat": -23.372667,
+    "lon": 43.659,
+    "coefficient": false
+  },
+  {
+    "id": "TOMO_NOUVELLE_CALEDONIE",
+    "name": "Tomo",
+    "territory": "Grande Terre",
+    "lat": -21.959167,
+    "lon": 166.138333,
+    "coefficient": false
+  },
+  {
+    "id": "TOULON",
+    "name": "Toulon",
+    "territory": null,
+    "lat": 43.122678,
+    "lon": 5.914669,
+    "coefficient": false
+  },
+  {
+    "id": "TREBEURDEN",
+    "name": "Trébeurden",
+    "territory": null,
+    "lat": 48.770833,
+    "lon": -3.586667,
+    "coefficient": true
+  },
+  {
+    "id": "TREGUIER",
+    "name": "Tréguier",
+    "territory": null,
+    "lat": 48.786333,
+    "lon": -3.219333,
+    "coefficient": true
+  },
+  {
+    "id": "TREHIGUIER",
+    "name": "Tréhiguier",
+    "territory": null,
+    "lat": 47.495,
+    "lon": -2.44,
+    "coefficient": true
+  },
+  {
+    "id": "TREZ-HIR",
+    "name": "Trez-Hir",
+    "territory": null,
+    "lat": 48.339667,
+    "lon": -4.699333,
+    "coefficient": true
+  },
+  {
+    "id": "TRIPOLI_LIBAN",
+    "name": "Tripoli",
+    "territory": "Liban",
+    "lat": 34.451667,
+    "lon": 35.8215,
+    "coefficient": false
+  },
+  {
+    "id": "DEAUVILLE",
+    "name": "Trouville-Deauville",
+    "territory": null,
+    "lat": 49.366667,
+    "lon": 0.083333,
+    "coefficient": true
+  },
+  {
+    "id": "UALA",
+    "name": "Uala (Île Art)",
+    "territory": "Îles Belep",
+    "lat": -19.72,
+    "lon": 163.64,
+    "coefficient": false
+  },
+  {
+    "id": "UTUROA",
+    "name": "Uturoa",
+    "territory": "Archipel de la Société",
+    "lat": -16.728833,
+    "lon": -151.442833,
+    "coefficient": false
+  },
+  {
+    "id": "VAIARE",
+    "name": "Vaiare",
+    "territory": "Archipel de la Société",
+    "lat": -17.52,
+    "lon": -149.78,
+    "coefficient": false
+  },
+  {
+    "id": "VAIRAO_OUTUTAATA",
+    "name": "Vairao Oututaata",
+    "territory": "Archipel de la Société",
+    "lat": -17.808,
+    "lon": -149.294333,
+    "coefficient": false
+  },
+  {
+    "id": "VAITAPE_BORA-BORA",
+    "name": "Vaitape",
+    "territory": "Archipel de la Société",
+    "lat": -16.5075,
+    "lon": -151.753333,
+    "coefficient": false
+  },
+  {
+    "id": "VANNES",
+    "name": "Vannes",
+    "territory": null,
+    "lat": 47.638333,
+    "lon": -2.760833,
+    "coefficient": true
+  },
+  {
+    "id": "VAVOUTO",
+    "name": "Vavouto",
+    "territory": "Grande Terre",
+    "lat": -21.002833,
+    "lon": 164.6715,
+    "coefficient": false
+  },
+  {
+    "id": "VIEUX-BOUCAU",
+    "name": "Vieux-Boucau",
+    "territory": null,
+    "lat": 43.783333,
+    "lon": -1.416667,
+    "coefficient": true
+  },
+  {
+    "id": "WADRILLA_OUVEA",
+    "name": "Wadrilla",
+    "territory": "Île Ouvéa",
+    "lat": -20.548833,
+    "lon": 166.561,
+    "coefficient": false
+  },
+  {
+    "id": "WE_LIFOU",
+    "name": "Wé",
+    "territory": "Île Lifou",
+    "lat": -20.916667,
+    "lon": 167.266667,
+    "coefficient": false
+  },
+  {
+    "id": "WISSANT",
+    "name": "Wissant",
+    "territory": null,
+    "lat": 50.883333,
+    "lon": 1.666667,
+    "coefficient": true
+  },
+  {
+    "id": "YANDE",
+    "name": "Yandé",
+    "territory": "Îles Belep",
+    "lat": -20.042167,
+    "lon": 163.790667,
+    "coefficient": false
+  },
+  {
+    "id": "YATE",
+    "name": "Yaté",
+    "territory": "Grande Terre",
+    "lat": -22.156667,
+    "lon": 166.931667,
+    "coefficient": false
+  }
+]

@@ -1,0 +1,1621 @@
+{
+  "manifest_version": 1,
+  "type": "device",
+  "name": "Marées France",
+  "description": {
+    "en": "Tides of French harbors (SHOM): high and low tides, coefficients, water height, scenes.",
+    "fr": "Marées des ports français (SHOM) : pleines et basses mers, coefficients, hauteur d’eau, scènes.",
+    "de": "Gezeiten französischer Häfen (SHOM): Hoch- und Niedrigwasser, Koeffizienten, Wasserhöhe.",
+    "es": "Mareas de puertos franceses (SHOM): pleamares, bajamares, coeficientes, altura del agua."
+  },
+  "version": "0.1.0",
+  "docker_image": "ghcr.io/william-de71/gladys-marees-france:0.1.0",
+  "gladys_version": ">=5.1.0",
+  "categories": ["environment"],
+  "cover_image": "https://raw.githubusercontent.com/William-De71/gladys-marees-france/main/cover.jpg",
+  "transports": ["cloud"],
+  "config_schema": [
+    {
+      "key": "intro",
+      "type": "section",
+      "label": {
+        "en": "Harbors",
+        "fr": "Ports",
+        "de": "Häfen",
+        "es": "Puertos"
+      },
+      "description": {
+        "en": "The tide predictions of the SHOM, the French hydrographic office, as on maree.shom.fr: 380 harbors in mainland France, overseas and abroad. Choose up to five harbors; each one becomes a device on the Discovery screen.",
+        "fr": "Les prédictions de marée du SHOM, comme sur maree.shom.fr : 380 ports en métropole, outre-mer et à l’étranger. Choisissez jusqu’à cinq ports ; chacun devient un appareil dans l’écran de découverte.",
+        "de": "Die Gezeitenvorhersagen des SHOM, des französischen hydrografischen Dienstes, wie auf maree.shom.fr: 380 Häfen in Frankreich, Übersee und im Ausland. Wählen Sie bis zu fünf Häfen; jeder wird ein Gerät im Erkennungsbildschirm.",
+        "es": "Las predicciones de marea del SHOM, el servicio hidrográfico francés, como en maree.shom.fr: 380 puertos en Francia, ultramar y el extranjero. Elija hasta cinco puertos; cada uno se convierte en un dispositivo en la pantalla de descubrimiento."
+      },
+      "links": [
+        {
+          "url": "https://maree.shom.fr/",
+          "label": {
+            "en": "SHOM tide website",
+            "fr": "Site des marées du SHOM",
+            "de": "Gezeiten-Website des SHOM",
+            "es": "Web de mareas del SHOM"
+          }
+        }
+      ]
+    },
+    {
+      "key": "port",
+      "type": "select",
+      "label": {
+        "en": "Harbor",
+        "fr": "Port",
+        "de": "Hafen",
+        "es": "Puerto"
+      },
+      "description": {
+        "en": "Pick it in the list (type its first letters to jump to it).",
+        "fr": "Choisissez-le dans la liste (tapez ses premières lettres pour y aller).",
+        "de": "In der Liste wählen (Anfangsbuchstaben tippen, um hinzuspringen).",
+        "es": "Elíjalo en la lista (escriba sus primeras letras para ir a él)."
+      },
+      "options": [
+        { "value": "ABIDJAN-VRIDI", "label": { "en": "Abidjan (Côte d’Ivoire)" } },
+        { "value": "AGADIR", "label": { "en": "Agadir (Maroc)" } },
+        { "value": "AHE_TENUKUPARA", "label": { "en": "Ahe (Archipel des Tuamotu)" } },
+        { "value": "AJACCIO", "label": { "en": "Ajaccio" } },
+        { "value": "ALDERNEY_BRAYE", "label": { "en": "Alderney (Braye) (Îles Anglo-Normandes)" } },
+        { "value": "ALPHA-BAIE_DE_SEINE", "label": { "en": "Alpha-Baie de Seine" } },
+        { "value": "PRIMEL", "label": { "en": "Anse de Primel" } },
+        {
+          "value": "ANSE_LONGUE_NAMAOURA",
+          "label": { "en": "Anse Longue Namaoura (Grande Terre)" }
+        },
+        { "value": "ANTSIRANANA", "label": { "en": "Antsiranana (Madagascar)" } },
+        { "value": "ARCACHON_EYRAC", "label": { "en": "Arcachon" } },
+        { "value": "ARRADON", "label": { "en": "Arradon" } },
+        { "value": "ARROMANCHES-LES-BAINS", "label": { "en": "Arromanches-les-Bains" } },
+        { "value": "ARUTUA", "label": { "en": "Arutua (Archipel des Tuamotu)" } },
+        { "value": "AUDIERNE", "label": { "en": "Audierne (Quai Pelletan)" } },
+        { "value": "AURAY_SAINT-GOUSTAN", "label": { "en": "Auray (St-Goustan)" } },
+        { "value": "AVATORU_LAGON", "label": { "en": "Avatoru lagon (Archipel des Tuamotu)" } },
+        { "value": "BAIE_DE_CHASSELOUP", "label": { "en": "Baie Chasseloup (Grande Terre)" } },
+        {
+          "value": "BAIE_DE_BANARE_POUM",
+          "label": { "en": "Baie de Banaré (Poum) (Grande Terre)" }
+        },
+        { "value": "BAIE_DE_GADJI", "label": { "en": "Baie de Gadji (Grande Terre)" } },
+        { "value": "BAIE_DE_GOMEN", "label": { "en": "Baie de Gomen (Grande Terre)" } },
+        { "value": "KOUAKOUE", "label": { "en": "Baie de Kouakoué (Grande Terre)" } },
+        { "value": "KUTO", "label": { "en": "Baie de Kuto (Île des Pins)" } },
+        { "value": "OUESSANT_LAMPAUL", "label": { "en": "Baie de Lampaul (Île d'Ouessant)" } },
+        { "value": "RHO", "label": { "en": "Baie de Ro (Île Maré)" } },
+        { "value": "TADINE", "label": { "en": "Baie de Tadine (Île Maré)" } },
+        { "value": "TOUHO", "label": { "en": "Baie de Touho (Grande Terre)" } },
+        { "value": "BAIE_DU_PRONY", "label": { "en": "Baie du Prony (Grande Terre)" } },
+        { "value": "BAIE_DU_STIFF", "label": { "en": "Baie du Stiff (Île d'Ouessant)" } },
+        { "value": "BAIE_HOPEFUL", "label": { "en": "Baie Hopeful (Îles Kerguelen)" } },
+        { "value": "BAIE_LAROSE", "label": { "en": "Baie Larose (Îles Kerguelen)" } },
+        { "value": "BAIE_NORVEGIENNE", "label": { "en": "Baie Norvégienne (Îles Kerguelen)" } },
+        { "value": "BAIE_OISEAU", "label": { "en": "Baie Oiseau (Îles Kerguelen)" } },
+        { "value": "OUARA", "label": { "en": "Baie Ouara (Grande Terre)" } },
+        { "value": "OUINNE", "label": { "en": "Baie Ouinné (Grande Terre)" } },
+        { "value": "BANC_DE_LA_ZELEE", "label": { "en": "Banc de la Zélée (Îles Éparses)" } },
+        { "value": "SANDETTIE_EST", "label": { "en": "Banc du Sandettié" } },
+        { "value": "VERGOYER_EST", "label": { "en": "Banc du Vergoyer" } },
+        { "value": "BANYULS", "label": { "en": "Banyuls-sur-Mer" } },
+        { "value": "BARFLEUR", "label": { "en": "Barfleur" } },
+        {
+          "value": "BASE_DUMONT_D_URVILLE",
+          "label": { "en": "Base Dumont d'Urville (Terre Adélie)" }
+        },
+        { "value": "BASSAS_DA_INDIA", "label": { "en": "Bassas da India (Îles Éparses)" } },
+        { "value": "BASSE_TERRE", "label": { "en": "Basse-Terre (Guadeloupe)" } },
+        { "value": "BASTIA", "label": { "en": "Bastia" } },
+        { "value": "BENODET", "label": { "en": "Bénodet" } },
+        { "value": "BOUEE_FORT-MAHON", "label": { "en": "Berck Plage - Fort Mahon" } },
+        { "value": "BEYROUTH", "label": { "en": "Beyrouth (Liban)" } },
+        { "value": "BINIC", "label": { "en": "Binic" } },
+        { "value": "BISCARROSSE", "label": { "en": "Biscarrosse" } },
+        { "value": "BOLAMA", "label": { "en": "Bolama (Guinée-Bissau)" } },
+        { "value": "BONIFACIO", "label": { "en": "Bonifacio" } },
+        { "value": "BOUCAU-BAYONNE", "label": { "en": "Boucau-Bayonne" } },
+        { "value": "L_ECREVIERE", "label": { "en": "Bouée Ecrevière (Îles Anglo-Normandes)" } },
+        {
+          "value": "ENTREE_BAIE_DE_SOMME",
+          "label": { "en": "Bouée entrée Baie de Somme (AT-SO)" }
+        },
+        { "value": "BOUEE_FROMENTINE", "label": { "en": "Bouée Fromentine" } },
+        { "value": "BOUEE_LE_GOELAND", "label": { "en": "Bouée Le Goéland" } },
+        { "value": "BOUJDOUR", "label": { "en": "Boujdour (Maroc)" } },
+        { "value": "BOULOGNE-SUR-MER", "label": { "en": "Boulogne-sur-Mer" } },
+        { "value": "BOURAIL", "label": { "en": "Bourail (Grande Terre)" } },
+        { "value": "BREHEC", "label": { "en": "Brehec" } },
+        { "value": "BREST", "label": { "en": "Brest" } },
+        { "value": "BRIGNOGAN", "label": { "en": "Brignogan-Plage" } },
+        { "value": "BUBAQUE", "label": { "en": "Bubaque (Guinée Bissau)" } },
+        { "value": "CALAIS", "label": { "en": "Calais" } },
+        { "value": "CALVI", "label": { "en": "Calvi" } },
+        { "value": "CAMARET-SUR-MER", "label": { "en": "Camaret-sur-Mer" } },
+        { "value": "CANCALE", "label": { "en": "Cancale" } },
+        { "value": "CAP_CHEVALIER_MARTINIQUE", "label": { "en": "Cap Chevalier (Martinique)" } },
+        { "value": "CAP_FERRET", "label": { "en": "Cap Ferret" } },
+        { "value": "CAPBRETON", "label": { "en": "Capbreton" } },
+        { "value": "CARTERET", "label": { "en": "Carteret" } },
+        { "value": "CASABLANCA", "label": { "en": "Casablanca (Maroc)" } },
+        { "value": "CAYEUX-SUR-MER", "label": { "en": "Cayeux-sur-Mer" } },
+        { "value": "CENTURI", "label": { "en": "Centuri" } },
+        { "value": "CEUTA", "label": { "en": "Ceuta (Espagne)" } },
+        { "value": "MORLAIX_PEN_AL_LANN", "label": { "en": "Château du Taureau" } },
+        { "value": "CHEPENEHE", "label": { "en": "Chépénéhé (Île Lifou)" } },
+        { "value": "CHERBOURG", "label": { "en": "Cherbourg" } },
+        { "value": "CLIPPERTON", "label": { "en": "Clipperton" } },
+        { "value": "CONAKRY", "label": { "en": "Conakry (Guinée)" } },
+        { "value": "CONCARNEAU", "label": { "en": "Concarneau" } },
+        { "value": "CORDOUAN", "label": { "en": "Cordouan" } },
+        { "value": "COTONOU", "label": { "en": "Cotonou (Bénin)" } },
+        { "value": "COURSEULLES_LARGE", "label": { "en": "Courseulles-sur-Mer (Large)" } },
+        { "value": "DAHOUET", "label": { "en": "Dahouet" } },
+        { "value": "DAKAR", "label": { "en": "Dakar (Sénégal)" } },
+        { "value": "DAKHLA", "label": { "en": "Dakhla (Maroc)" } },
+        { "value": "DEGRAD_DES_CANNES", "label": { "en": "Dégrad des Cannes (Guyane)" } },
+        { "value": "DESHAIES", "label": { "en": "Deshaies (Guadeloupe)" } },
+        { "value": "DIELETTE", "label": { "en": "Diélette" } },
+        { "value": "DIEPPE", "label": { "en": "Dieppe" } },
+        { "value": "DIVES-SUR-MER", "label": { "en": "Dives-sur-Mer" } },
+        { "value": "DJIBOUTI", "label": { "en": "Djibouti (République de Djibouti)" } },
+        { "value": "DOUALA", "label": { "en": "Douala (Cameroun)" } },
+        { "value": "DOUARNENEZ", "label": { "en": "Douarnenez" } },
+        { "value": "DOUEOULOU", "label": { "en": "Douéoulou (Île Lifou)" } },
+        { "value": "DUNKERQUE", "label": { "en": "Dunkerque" } },
+        { "value": "DUNKERQUE_OUEST", "label": { "en": "Dunkerque Ouest" } },
+        { "value": "DZAOUDZI", "label": { "en": "Dzaoudzi (Mayotte)" } },
+        { "value": "MAZAGAN", "label": { "en": "El Jadida (Mazagan) (Maroc)" } },
+        { "value": "EL_MHIREZ", "label": { "en": "El Mhirez (Maroc)" } },
+        { "value": "ENTREE_RIVIERE_ETEL", "label": { "en": "Entrée rivière d'Étel" } },
+        { "value": "ERQUY_PORT", "label": { "en": "Erquy" } },
+        { "value": "ESSAOUIRA", "label": { "en": "Essaouira (Mogador) (Maroc)" } },
+        { "value": "ETRETAT", "label": { "en": "Étretat" } },
+        {
+          "value": "FANGATAUFA_FREGATE",
+          "label": { "en": "Fangataufa (Frégate) (Archipel des Tuamotu)" }
+        },
+        {
+          "value": "FANGATAUFA_LARGE",
+          "label": { "en": "Fangataufa (large) (Archipel des Tuamotu)" }
+        },
+        {
+          "value": "FARATEA_TARAVAO",
+          "label": { "en": "Faratea Taravao (Archipel de la Société)" }
+        },
+        { "value": "FECAMP", "label": { "en": "Fécamp" } },
+        { "value": "FORT-BOYARD", "label": { "en": "Fort Boyard" } },
+        { "value": "FORT-ESPAGNOL", "label": { "en": "Fort Espagnol" } },
+        { "value": "FORT-DE-FRANCE", "label": { "en": "Fort-de-France (Martinique)" } },
+        { "value": "FOS_SUR_MER", "label": { "en": "Fos-sur-Mer" } },
+        { "value": "FOUE", "label": { "en": "Foué (Grande Terre)" } },
+        { "value": "FROMENTINE_EMBARCADERE", "label": { "en": "Fromentine (embarcadère)" } },
+        { "value": "GORO", "label": { "en": "Goro (Grande Terre)" } },
+        { "value": "GOURY", "label": { "en": "Goury" } },
+        { "value": "GRANDCAMP", "label": { "en": "Grandcamp (Entrée chenal de Carentan)" } },
+        { "value": "ILES_CHAUSEY", "label": { "en": "Grande-Île (Îles Chausey)" } },
+        { "value": "GRANVILLE_LE_COCALEU", "label": { "en": "Granville" } },
+        { "value": "GRAVELINES", "label": { "en": "Gravelines" } },
+        {
+          "value": "ST-PETER_PORT",
+          "label": { "en": "Guernsey (St Peter Port) (Îles Anglo-Normandes)" }
+        },
+        { "value": "GUSTAVIA", "label": { "en": "Gustavia" } },
+        { "value": "MOOREA_HAAPITI", "label": { "en": "Haapiti (Archipel de la Société)" } },
+        { "value": "HAKAHAU", "label": { "en": "Hakahau (Îles Marquises)" } },
+        { "value": "WALLIS_HALALO", "label": { "en": "Halalo (Îles Wallis)" } },
+        { "value": "HAO_PASSE_KAKI", "label": { "en": "Hao (Passe Kaki) (Archipel des Tuamotu)" } },
+        { "value": "HELLVILLE", "label": { "en": "Hellville (Madagascar)" } },
+        { "value": "HENDAYE", "label": { "en": "Hendaye" } },
+        { "value": "HERQUEVILLE", "label": { "en": "Herqueville" } },
+        { "value": "HIENGHENE", "label": { "en": "Hienghène (Grande Terre)" } },
+        { "value": "HOEDIC", "label": { "en": "Hoëdic" } },
+        { "value": "HOUAT", "label": { "en": "Houat" } },
+        { "value": "ILE_AMEDEE", "label": { "en": "Île Amédée (Grande Terre)" } },
+        { "value": "ILE_AUX_MOINES_ER_GORED", "label": { "en": "Île aux Moines" } },
+        { "value": "ILE_CROZET", "label": { "en": "Ile Crozet (TAAF)" } },
+        { "value": "ILE_D_AIX", "label": { "en": "Île d'Aix" } },
+        { "value": "BREHAT_MEN_JOLIGUET", "label": { "en": "Île de Bréhat" } },
+        { "value": "ILE_DE_SEIN_NORD", "label": { "en": "Île de Sein" } },
+        { "value": "LES_OITELLIERES", "label": { "en": "Île des Hébihens" } },
+        { "value": "EIAO_VAITUHA", "label": { "en": "Île Eiao (Îles Marquises)" } },
+        { "value": "ILE_EUROPA", "label": { "en": "Île Europa (Îles Éparses)" } },
+        { "value": "ILE_JUAN_DE_NOVA", "label": { "en": "Île Juan de Nova (Îles Éparses)" } },
+        {
+          "value": "ILE_KOMAYTOU_LARGE",
+          "label": { "en": "Île Komaytou (République de Djibouti)" }
+        },
+        { "value": "ILE_LONGUE_CHESTERFIELD", "label": { "en": "Île Longue (Îles Chesterfield)" } },
+        { "value": "ILE_MIQUELON", "label": { "en": "Île Miquelon (Saint-Pierre-et-Miquelon)" } },
+        { "value": "MOLENE_NORD", "label": { "en": "Île Molène" } },
+        { "value": "SURPRISE", "label": { "en": "Île Surprise (Récifs D’Entrecasteaux)" } },
+        { "value": "ILE_ROUSSE", "label": { "en": "Île-Rousse" } },
+        { "value": "ILES_DU_SALUT", "label": { "en": "Îles du Salut (Guyane)" } },
+        { "value": "ILES_GLORIEUSES", "label": { "en": "Îles Glorieuses (Îles Éparses)" } },
+        { "value": "ILES_SAINT-MARCOUF", "label": { "en": "Îles Saint-Marcouf" } },
+        { "value": "ILET_LA_MERE", "label": { "en": "Îlet la Mère (Guyane)" } },
+        { "value": "ILOT_MATO", "label": { "en": "Îlot Mato (Grande Terre)" } },
+        { "value": "N_DIE", "label": { "en": "Îlot N'Dié (Grande Terre)" } },
+        { "value": "N_DO", "label": { "en": "Îlot N'Do (Grande Terre)" } },
+        { "value": "JORF_LASFAR", "label": { "en": "Jorf Lasfar (Maroc)" } },
+        { "value": "KAMSAR", "label": { "en": "Kamsar (Guinée)" } },
+        { "value": "KOUMAC", "label": { "en": "Koumac (Grande Terre)" } },
+        { "value": "KOUROU", "label": { "en": "Kourou (Guyane)" } },
+        { "value": "KSAR_ES_SRHIR", "label": { "en": "Ksar es Sghir (Maroc)" } },
+        { "value": "ABER_BENOIT_MEAN_RENEAT", "label": { "en": "L'Aber Benoît" } },
+        { "value": "LANILDUT", "label": { "en": "L'Aber Ildut" } },
+        { "value": "ABER_WRAC_H", "label": { "en": "L'Aber Wrac'h" } },
+        { "value": "AIGUILLON_SUR_MER", "label": { "en": "L'Aiguillon-sur-Mer" } },
+        { "value": "L_HERBAUDIERE", "label": { "en": "L'Herbaudière (Île de Noirmoutier)" } },
+        { "value": "LA_COTINIERE", "label": { "en": "La Cotinière" } },
+        { "value": "LA_DESIRADE", "label": { "en": "La Désirade (Guadeloupe)" } },
+        { "value": "LA_FIGUEIRETTE", "label": { "en": "La Figueirette" } },
+        { "value": "LA_PALMYRE", "label": { "en": "La Palmyre" } },
+        { "value": "LA_ROCHE", "label": { "en": "La Roche (Île Maré)" } },
+        { "value": "LA_ROCHELLE-PALLICE", "label": { "en": "La Rochelle - La Pallice" } },
+        { "value": "LA_TRINITE_MARTINIQUE", "label": { "en": "La Trinité (Martinique)" } },
+        { "value": "LA_TRINITE-SUR-MER", "label": { "en": "La Trinité-sur-Mer" } },
+        { "value": "LAAYOUNE", "label": { "en": "Laayoune (Maroc)" } },
+        { "value": "LACANAU_LARGE", "label": { "en": "Lacanau" } },
+        { "value": "LARMOR-BADEN", "label": { "en": "Larmor-Baden" } },
+        { "value": "LE_CONQUET", "label": { "en": "Le Conquet" } },
+        { "value": "LE_CROISIC", "label": { "en": "Le Croisic" } },
+        { "value": "LE_DELLEC", "label": { "en": "Le Dellec" } },
+        { "value": "LE_FRANCOIS", "label": { "en": "Le François (Martinique)" } },
+        { "value": "LE_GRAND_CHARPENTIER", "label": { "en": "Le Grand Charpentier" } },
+        { "value": "LE_GUILVINEC", "label": { "en": "Le Guilvinec" } },
+        { "value": "LE_HAVRE", "label": { "en": "Le Havre" } },
+        { "value": "ANTIFER", "label": { "en": "Le Havre-Antifer (Terminal pétrolier)" } },
+        { "value": "LE_LARIVOT", "label": { "en": "Le Larivot (Guyane)" } },
+        { "value": "LE_LEGUE_BOUEE", "label": { "en": "Le Légué (Bouée)" } },
+        { "value": "LE_LOGEO", "label": { "en": "Le Logeo" } },
+        { "value": "LE_MARIN", "label": { "en": "Le Marin (Martinique)" } },
+        { "value": "LE_PALAIS", "label": { "en": "Le Palais (Belle-Île)" } },
+        { "value": "LE_POULDU", "label": { "en": "Le Pouldu" } },
+        { "value": "LE_POULIGUEN", "label": { "en": "Le Pouliguen" } },
+        { "value": "LE_ROBERT", "label": { "en": "Le Robert (Martinique)" } },
+        { "value": "LE_SENEQUET", "label": { "en": "Le Sénéquet" } },
+        { "value": "LE_TOUQUET", "label": { "en": "Le Touquet-Étaples" } },
+        { "value": "LE_TREPORT", "label": { "en": "Le Tréport" } },
+        { "value": "LE_VAUCLIN", "label": { "en": "Le Vauclin (Martinique)" } },
+        { "value": "PTE_DE_GRAVE_LE_VERDON", "label": { "en": "Le Verdon-sur-Mer" } },
+        { "value": "LEAVA_FUTUNA", "label": { "en": "Leava (Futuna) (Îles Futuna et Alofi)" } },
+        { "value": "LES_ARDENTES", "label": { "en": "Les Ardentes" } },
+        { "value": "LES_HEAUX-DE-BREHAT", "label": { "en": "Les Héaux-de-Bréhat" } },
+        { "value": "LES_MINQUIERS", "label": { "en": "Les Minquiers (Îles Anglo-Normandes)" } },
+        { "value": "ROCHES_DOUVRES", "label": { "en": "Les Roches Douvres" } },
+        { "value": "LES_SABLES-D_OLONNE", "label": { "en": "Les Sables d'Olonne" } },
+        { "value": "LESCONIL", "label": { "en": "Lesconil" } },
+        { "value": "LEZARDRIEUX_PORT", "label": { "en": "Lézardrieux" } },
+        { "value": "LIBREVILLE", "label": { "en": "Libreville (Gabon)" } },
+        { "value": "LOCMARIAQUER", "label": { "en": "Locmariaquer" } },
+        { "value": "LOCQUEMEAU", "label": { "en": "Locquemeau" } },
+        { "value": "LOCQUIREC", "label": { "en": "Locquirec" } },
+        { "value": "LOCTUDY", "label": { "en": "Loctudy" } },
+        { "value": "LOME", "label": { "en": "Lomé (Togo)" } },
+        { "value": "LONGONI", "label": { "en": "Longoni (Mayotte)" } },
+        { "value": "PORT_COMMERCE_LORIENT", "label": { "en": "Lorient (Port de commerce)" } },
+        { "value": "MAHAMATE", "label": { "en": "Mahamaté (Grande Terre)" } },
+        { "value": "MAKATEA", "label": { "en": "Makatea (Archipel des Tuamotu)" } },
+        { "value": "POUHEVA_MAKEMO", "label": { "en": "Makemo (Archipel des Tuamotu)" } },
+        { "value": "MARIE-GALANTE_GD_BOURG", "label": { "en": "Marie-Galante (Guadeloupe)" } },
+        { "value": "MARSEILLE", "label": { "en": "Marseille (Corniche)" } },
+        { "value": "WALLIS_MATA_UTU", "label": { "en": "Mata-Utu (Îles Wallis)" } },
+        { "value": "MATAVAI", "label": { "en": "Matavai (Archipel de la Société)" } },
+        { "value": "MEHDIA", "label": { "en": "Mehdia (Maroc)" } },
+        { "value": "MIMIZAN", "label": { "en": "Mimizan" } },
+        { "value": "MOHAMMEDIA", "label": { "en": "Mohammedia (Maroc)" } },
+        { "value": "MONACO", "label": { "en": "Monaco (Principauté de Monaco)" } },
+        { "value": "MORGAT", "label": { "en": "Morgat" } },
+        {
+          "value": "QUAI_DE_FARE",
+          "label": { "en": "Mouillage de Fare (Archipel de la Société)" }
+        },
+        { "value": "BREST_MOULIN-BLANC", "label": { "en": "Moulin Blanc" } },
+        { "value": "RECIF_MTITI", "label": { "en": "Mtiti (Mayotte)" } },
+        { "value": "NEPOUI", "label": { "en": "Mueo (Nepoui) (Grande Terre)" } },
+        { "value": "MURUROA_ANEMONE", "label": { "en": "Mururoa (Polynésie française)" } },
+        { "value": "NICE", "label": { "en": "Nice" } },
+        { "value": "NOUADHIBOU", "label": { "en": "Nouadhibou (Mauritanie)" } },
+        { "value": "NOUAKCHOTT", "label": { "en": "Nouakchott (Mauritanie)" } },
+        { "value": "NOUMEA_CHALEIX", "label": { "en": "Nouméa - Chaleix (Grande Terre)" } },
+        { "value": "NOUMEA_NUMBO", "label": { "en": "Nouméa - Numbo (Nouvelle-Calédonie)" } },
+        { "value": "SAFI_SUD", "label": { "en": "Nouveau Port de Safi (Maroc)" } },
+        { "value": "OMONVILLE-LA-ROGUE", "label": { "en": "Omonville-la-Rogue" } },
+        { "value": "OUANO", "label": { "en": "Ouano (Grande Terre)" } },
+        { "value": "OUISTREHAM", "label": { "en": "Ouistreham" } },
+        { "value": "PAAGOUMENE", "label": { "en": "Paagoumène (Grande Terre)" } },
+        { "value": "PAIMPOL", "label": { "en": "Paimpol" } },
+        { "value": "PAPEETE_FARE-UTE", "label": { "en": "Papeete (Polynésie française)" } },
+        { "value": "MOOREA_PAPETOAI", "label": { "en": "Papetoai (Archipel de la Société)" } },
+        { "value": "PENERF", "label": { "en": "Pénerf" } },
+        { "value": "GLENAN_PENFRET", "label": { "en": "Penfret (Îles de Glénan)" } },
+        { "value": "PERROS-GUIREC_TRESTRAOU", "label": { "en": "Perros-Guirec" } },
+        { "value": "HONFLEUR", "label": { "en": "PK 355,850 : Honfleur" } },
+        { "value": "BALISE_A", "label": { "en": "PK 364,775 : Balise A" } },
+        { "value": "PLOGOFF", "label": { "en": "Plogoff" } },
+        { "value": "PLOUMANACH", "label": { "en": "Ploumanac'h" } },
+        { "value": "WHARF_DE_PLUM", "label": { "en": "Plum (Grande Terre)" } },
+        { "value": "POINGAM", "label": { "en": "Poingam (Grande Terre)" } },
+        { "value": "POINTE_D_AGON", "label": { "en": "Pointe d'Agon" } },
+        { "value": "POINTE_DE_GATSEAU", "label": { "en": "Pointe de Gatseau" } },
+        { "value": "PORT-BLOC", "label": { "en": "Pointe de Grave" } },
+        { "value": "POINTE-AIGUILLON", "label": { "en": "Pointe de l'Aiguillon" } },
+        { "value": "POINTE-DE-PANDOP", "label": { "en": "Pointe de Pandop (Grande Terre)" } },
+        { "value": "POINTE_DE_SAINT-GILDAS", "label": { "en": "Pointe de Saint-Gildas" } },
+        { "value": "POINTE_DES_GALETS", "label": { "en": "Pointe des Galets (La Réunion)" } },
+        {
+          "value": "LES_HATTES",
+          "label": { "en": "Pointe Française (Pointe des Hattes) (Guyane)" }
+        },
+        { "value": "POINTE-A-PITRE", "label": { "en": "Pointe-à-Pitre (Guadeloupe)" } },
+        { "value": "POINTE_NOIRE", "label": { "en": "Pointe-Noire (Congo)" } },
+        { "value": "PONERIHOUEN", "label": { "en": "Ponérihouen (Grande Terre)" } },
+        { "value": "PONT_SEUDRE", "label": { "en": "Pont aval de la Seudre" } },
+        { "value": "PORNIC", "label": { "en": "Pornic" } },
+        { "value": "PORNICHET", "label": { "en": "Pornichet" } },
+        { "value": "PORO", "label": { "en": "Poro (Grande Terre)" } },
+        { "value": "PORT-BOISE", "label": { "en": "Port Boisé (Grande Terre)" } },
+        { "value": "PORT_CAMARGUE", "label": { "en": "Port Camargue" } },
+        { "value": "ETEL", "label": { "en": "Port d'Étel" } },
+        { "value": "PORT_DE_BOULARI", "label": { "en": "Port de Boulari (Grande Terre)" } },
+        { "value": "PORT_DE_PRONY", "label": { "en": "Port de Prony (Grande Terre)" } },
+        { "value": "SETE", "label": { "en": "Port de Sète" } },
+        { "value": "LE_CROUESTY", "label": { "en": "Port du Crouesty" } },
+        { "value": "PLOGOFF_PORT-DU-VORLEN", "label": { "en": "Port du Vorlen" } },
+        { "value": "PORT_FERREOL", "label": { "en": "Port Ferréol" } },
+        { "value": "PORT_MANECH", "label": { "en": "Port Manec'h" } },
+        { "value": "PORT_SONARA", "label": { "en": "Port Sonara (Cameroun)" } },
+        { "value": "PORT-AUX-FRANCAIS", "label": { "en": "Port-aux-Français (Îles Kerguelen)" } },
+        { "value": "PORT-BENI", "label": { "en": "Port-Béni" } },
+        { "value": "PORT-COMBUI", "label": { "en": "Port-Combui (Grande Terre)" } },
+        { "value": "PORT_DE_BOUC", "label": { "en": "Port-de-Bouc" } },
+        { "value": "PORT-EN-BESSIN", "label": { "en": "Port-en-Bessin" } },
+        { "value": "PORT-GENTIL", "label": { "en": "Port-Gentil (Gabon)" } },
+        { "value": "PORT-HALIGUEN", "label": { "en": "Port-Haliguen" } },
+        { "value": "PORT-JOINVILLE", "label": { "en": "Port-Joinville (Île d'Yeu)" } },
+        { "value": "PORT_LA_FORET", "label": { "en": "Port-la-Forêt" } },
+        { "value": "PORT_LA_NOUVELLE", "label": { "en": "Port-la-Nouvelle" } },
+        { "value": "PORT-LOUIS_LOCMALO", "label": { "en": "Port-Louis (Locmalo)" } },
+        { "value": "PORT-MARIA", "label": { "en": "Port-Maria" } },
+        { "value": "PORT-MARTIN", "label": { "en": "Port-Martin (Terre Adélie)" } },
+        { "value": "PORT-NAVALO", "label": { "en": "Port-Navalo" } },
+        { "value": "PORT-TUDY", "label": { "en": "Port-Tudy" } },
+        { "value": "PORT-VENDRES", "label": { "en": "Port-Vendres" } },
+        { "value": "PORTBAIL", "label": { "en": "Portbail" } },
+        { "value": "PORTIVY", "label": { "en": "Portivy" } },
+        { "value": "PORTSALL", "label": { "en": "Portsall" } },
+        { "value": "POUEBO", "label": { "en": "Pouébo (Grande Terre)" } },
+        { "value": "POAMBOA", "label": { "en": "Pouembout (Grande Terre)" } },
+        { "value": "POYA", "label": { "en": "Poya (Grande Terre)" } },
+        { "value": "RABAT", "label": { "en": "Rabat (Maroc)" } },
+        { "value": "RAIRUA", "label": { "en": "Raivavae (Polynésie française)" } },
+        { "value": "RAPA", "label": { "en": "Rapa (Archipel des Australes)" } },
+        { "value": "GEYSER", "label": { "en": "Récif du Geyser (Îles Éparses)" } },
+        { "value": "RICHARD", "label": { "en": "Richard" } },
+        { "value": "RIKITEA", "label": { "en": "Rikitea (Polynésie française)" } },
+        { "value": "DJOGUE", "label": { "en": "Rivière Casamance (Djogué) (Sénégal)" } },
+        { "value": "MAMIE", "label": { "en": "Rivière de Mamié (Entrée) (Grande Terre)" } },
+        {
+          "value": "ROCHERS_NOIRS",
+          "label": { "en": "Rochers Noirs - Tubuai (Archipel des Australes)" }
+        },
+        { "value": "ROSCOFF", "label": { "en": "Roscoff" } },
+        { "value": "FAKARAVA_ROTOAVA", "label": { "en": "Rotoava (Archipel des Tuamotu)" } },
+        { "value": "ROYAN", "label": { "en": "Royan" } },
+        { "value": "RUYTINGEN_SW", "label": { "en": "Ruytingen" } },
+        { "value": "SADA", "label": { "en": "Sada - Baie de Chiconi (Mayotte)" } },
+        { "value": "SAFI", "label": { "en": "Safi (Maroc)" } },
+        { "value": "SAINT_HELIER", "label": { "en": "Saint Helier (Îles Anglo-Normandes)" } },
+        { "value": "PASSAGE_SAINT-ARMEL", "label": { "en": "Saint-Armel (Le Passage)" } },
+        { "value": "SAINT_BRIAC_SUR_MER", "label": { "en": "Saint-Briac-sur-Mer" } },
+        { "value": "SAINT-CAST", "label": { "en": "Saint-Cast" } },
+        { "value": "SAINT-DENIS_D_OLERON", "label": { "en": "Saint-Denis d'Oléron" } },
+        { "value": "SAINT-GERMAIN-SUR-AY", "label": { "en": "Saint-Germain-sur-Ay" } },
+        { "value": "ST-GILLES-CROIX-DE-VIE", "label": { "en": "Saint-Gilles-Croix-de-Vie" } },
+        { "value": "SAINT-GUENOLE", "label": { "en": "Saint-Guénolé" } },
+        { "value": "SOCOA", "label": { "en": "Saint-Jean-de-Luz" } },
+        {
+          "value": "SAINT-LAURENT_DU_MARONI",
+          "label": { "en": "Saint-Laurent du Maroni (Guyane)" }
+        },
+        { "value": "SAINT-LEU", "label": { "en": "Saint-Leu (La Réunion)" } },
+        { "value": "SAINT_LOUIS", "label": { "en": "Saint-Louis (Sénégal)" } },
+        { "value": "SAINT-MALO", "label": { "en": "Saint-Malo" } },
+        {
+          "value": "SAINT-MARTIN_MARIGOT",
+          "label": { "en": "Saint-Martin Marigot (Saint-Martin)" }
+        },
+        { "value": "SAINT-MARTIN_DE_RE", "label": { "en": "Saint-Martin-de-Ré (Île de Ré)" } },
+        { "value": "SAINT-NAZAIRE", "label": { "en": "Saint-Nazaire" } },
+        { "value": "ILE_SAINT-PAUL", "label": { "en": "Saint-Paul (Île Saint-Paul)" } },
+        {
+          "value": "ILE_SAINT-PIERRE",
+          "label": { "en": "Saint-Pierre (Saint-Pierre-et-Miquelon)" }
+        },
+        { "value": "SAINT-PIERRE_LA_REUNION", "label": { "en": "Saint-Pierre (La Réunion)" } },
+        { "value": "SAINT-PIERRE_MARTINIQUE", "label": { "en": "Saint-Pierre (Martinique)" } },
+        { "value": "SAINT-QUAY-PORTRIEUX", "label": { "en": "Saint-Quay-Portrieux" } },
+        { "value": "SAINT-VAAST-LA-HOUGUE", "label": { "en": "Saint-Vaast-la-Hougue" } },
+        { "value": "SAINT-VALERY-EN-CAUX", "label": { "en": "Saint-Valery-en-Caux" } },
+        { "value": "SAINTE_EVETTE", "label": { "en": "Sainte Evette" } },
+        { "value": "SAINTE_MARIE_LA_REUNION", "label": { "en": "Sainte-Marie (La Réunion)" } },
+        { "value": "SAN_PEDRO", "label": { "en": "San Pedro (Côte d’Ivoire)" } },
+        { "value": "SASSANDRA", "label": { "en": "Sassandra (Côte d’Ivoire)" } },
+        { "value": "SELAATA", "label": { "en": "Selaata (Liban)" } },
+        { "value": "SFAX", "label": { "en": "Sfax (Tunisie)" } },
+        { "value": "SOLENZARA", "label": { "en": "Solenzara" } },
+        { "value": "SOUR", "label": { "en": "Sour (Liban)" } },
+        { "value": "TAHANEA", "label": { "en": "Tahanea (Archipel des Tuamotu)" } },
+        { "value": "TAIOHAE_SHOM", "label": { "en": "Taiohae (Polynésie française)" } },
+        { "value": "TAMAJARUSH", "label": { "en": "Tamajarush (Maroc)" } },
+        { "value": "TAN-TAN", "label": { "en": "Tan-Tan (Maroc)" } },
+        { "value": "TANGER", "label": { "en": "Tanger (Maroc)" } },
+        { "value": "TANGER_MED", "label": { "en": "Tanger Med (Maroc)" } },
+        { "value": "TAO", "label": { "en": "Tao (Grande Terre)" } },
+        { "value": "TARFAYA", "label": { "en": "Tarfaya (Maroc)" } },
+        { "value": "TARIFA", "label": { "en": "Tarifa (Espagne)" } },
+        { "value": "TAUTIRA", "label": { "en": "Tautira (Archipel de la Société)" } },
+        { "value": "TEAVAROA", "label": { "en": "Teavaroa (Archipel des Tuamotu)" } },
+        { "value": "TEHERE", "label": { "en": "Tehere (Archipel des Tuamotu)" } },
+        { "value": "FAKARAVA_TETAMANU", "label": { "en": "Tetamanu (Archipel des Tuamotu)" } },
+        { "value": "THIO", "label": { "en": "Thio (Nouvelle-Calédonie)" } },
+        { "value": "TIBARAMA", "label": { "en": "Tibarama (Grande Terre)" } },
+        { "value": "TIGA", "label": { "en": "Tiga (Île Tiga)" } },
+        { "value": "TINDUFF", "label": { "en": "Tinduff" } },
+        { "value": "TOAMASINA", "label": { "en": "Toamasina (Madagascar)" } },
+        { "value": "TOAU", "label": { "en": "Toau (Archipel des Tuamotu)" } },
+        { "value": "TOLIARA", "label": { "en": "Toliara (Madagascar)" } },
+        { "value": "TOMO_NOUVELLE_CALEDONIE", "label": { "en": "Tomo (Grande Terre)" } },
+        { "value": "TOULON", "label": { "en": "Toulon" } },
+        { "value": "TREBEURDEN", "label": { "en": "Trébeurden" } },
+        { "value": "TREGUIER", "label": { "en": "Tréguier" } },
+        { "value": "TREHIGUIER", "label": { "en": "Tréhiguier" } },
+        { "value": "TREZ-HIR", "label": { "en": "Trez-Hir" } },
+        { "value": "TRIPOLI_LIBAN", "label": { "en": "Tripoli (Liban)" } },
+        { "value": "DEAUVILLE", "label": { "en": "Trouville-Deauville" } },
+        { "value": "UALA", "label": { "en": "Uala (Île Art) (Îles Belep)" } },
+        { "value": "UTUROA", "label": { "en": "Uturoa (Archipel de la Société)" } },
+        { "value": "VAIARE", "label": { "en": "Vaiare (Archipel de la Société)" } },
+        {
+          "value": "VAIRAO_OUTUTAATA",
+          "label": { "en": "Vairao Oututaata (Archipel de la Société)" }
+        },
+        { "value": "VAITAPE_BORA-BORA", "label": { "en": "Vaitape (Archipel de la Société)" } },
+        { "value": "VANNES", "label": { "en": "Vannes" } },
+        { "value": "VAVOUTO", "label": { "en": "Vavouto (Grande Terre)" } },
+        { "value": "VIEUX-BOUCAU", "label": { "en": "Vieux-Boucau" } },
+        { "value": "WADRILLA_OUVEA", "label": { "en": "Wadrilla (Île Ouvéa)" } },
+        { "value": "WE_LIFOU", "label": { "en": "Wé (Île Lifou)" } },
+        { "value": "WISSANT", "label": { "en": "Wissant" } },
+        { "value": "YANDE", "label": { "en": "Yandé (Îles Belep)" } },
+        { "value": "YATE", "label": { "en": "Yaté (Grande Terre)" } }
+      ],
+      "required": false
+    },
+    {
+      "key": "other_ports",
+      "type": "string",
+      "label": {
+        "en": "Other harbors",
+        "fr": "Autres ports",
+        "de": "Weitere Häfen",
+        "es": "Otros puertos"
+      },
+      "description": {
+        "en": "Up to four more, by name, separated by commas. Accents and case do not matter; the “Find a harbor” button below checks a name.",
+        "fr": "Jusqu’à quatre de plus, par leur nom, séparés par des virgules. Accents et majuscules sans importance ; le bouton « Rechercher un port » ci-dessous vérifie un nom.",
+        "de": "Bis zu vier weitere, nach Namen, durch Kommas getrennt. Akzente und Groß-/Kleinschreibung egal; die Schaltfläche „Hafen suchen“ unten prüft einen Namen.",
+        "es": "Hasta cuatro más, por nombre, separados por comas. Los acentos y las mayúsculas no importan; el botón «Buscar un puerto» de abajo comprueba un nombre."
+      },
+      "placeholder": {
+        "en": "Saint-Malo, Le Conquet",
+        "fr": "Saint-Malo, Le Conquet",
+        "de": "Saint-Malo, Le Conquet",
+        "es": "Saint-Malo, Le Conquet"
+      },
+      "required": false
+    },
+    {
+      "key": "language",
+      "type": "select",
+      "label": {
+        "en": "Language of the texts",
+        "fr": "Langue des textes",
+        "de": "Sprache der Texte",
+        "es": "Idioma de los textos"
+      },
+      "description": {
+        "en": "Device names, text states and scene summaries. Automatic: the language of your dashboard, once a tide widget has been displayed (French before that).",
+        "fr": "Noms des appareils, états texte et résumés des scènes. Automatique : la langue de votre tableau de bord, dès qu’un widget de marée a été affiché (français avant).",
+        "de": "Gerätenamen, Textzustände und Szenen-Zusammenfassungen. Automatisch: die Sprache Ihres Dashboards, sobald ein Gezeiten-Widget angezeigt wurde (vorher Französisch).",
+        "es": "Nombres de dispositivos, estados de texto y resúmenes de escenas. Automático: el idioma de su panel, en cuanto se haya mostrado un widget de mareas (francés antes)."
+      },
+      "options": [
+        {
+          "value": "auto",
+          "label": {
+            "en": "Automatic",
+            "fr": "Automatique",
+            "de": "Automatisch",
+            "es": "Automático"
+          }
+        },
+        {
+          "value": "en",
+          "label": {
+            "en": "English",
+            "fr": "English",
+            "de": "English",
+            "es": "English"
+          }
+        },
+        {
+          "value": "fr",
+          "label": {
+            "en": "Français",
+            "fr": "Français",
+            "de": "Français",
+            "es": "Français"
+          }
+        },
+        {
+          "value": "de",
+          "label": {
+            "en": "Deutsch",
+            "fr": "Deutsch",
+            "de": "Deutsch",
+            "es": "Deutsch"
+          }
+        },
+        {
+          "value": "es",
+          "label": {
+            "en": "Español",
+            "fr": "Español",
+            "de": "Español",
+            "es": "Español"
+          }
+        }
+      ],
+      "default": "auto",
+      "required": false
+    }
+  ],
+  "actions": [
+    {
+      "key": "find_port",
+      "label": {
+        "en": "Find a harbor",
+        "fr": "Rechercher un port",
+        "de": "Hafen suchen",
+        "es": "Buscar un puerto"
+      },
+      "description": {
+        "en": "Searches the SHOM list by name (accents and case ignored).",
+        "fr": "Cherche dans la liste du SHOM par nom (accents et majuscules ignorés).",
+        "de": "Sucht in der SHOM-Liste nach Namen (Akzente und Groß-/Kleinschreibung egal).",
+        "es": "Busca en la lista del SHOM por nombre (sin importar acentos ni mayúsculas)."
+      },
+      "timeout_seconds": 10,
+      "fields": [
+        {
+          "key": "query",
+          "type": "string",
+          "label": {
+            "en": "Name",
+            "fr": "Nom",
+            "de": "Name",
+            "es": "Nombre"
+          },
+          "placeholder": {
+            "en": "Concarneau",
+            "fr": "Concarneau",
+            "de": "Concarneau",
+            "es": "Concarneau"
+          },
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "refresh",
+      "label": {
+        "en": "Download now",
+        "fr": "Télécharger maintenant",
+        "de": "Jetzt herunterladen",
+        "es": "Descargar ahora"
+      },
+      "description": {
+        "en": "Downloads the tides of every harbor again (done once a day on its own).",
+        "fr": "Télécharge à nouveau les marées de chaque port (fait seul une fois par jour).",
+        "de": "Lädt die Gezeiten aller Häfen erneut herunter (geschieht sonst einmal täglich).",
+        "es": "Vuelve a descargar las mareas de cada puerto (se hace solo una vez al día)."
+      },
+      "timeout_seconds": 90
+    },
+    {
+      "key": "diagnostic",
+      "label": {
+        "en": "Diagnostic",
+        "fr": "Diagnostic",
+        "de": "Diagnose",
+        "es": "Diagnóstico"
+      },
+      "description": {
+        "en": "Writes the state of the integration to the Logs tab, to attach to a bug report.",
+        "fr": "Écrit l’état de l’intégration dans l’onglet Journaux, à joindre à un rapport de bug.",
+        "de": "Schreibt den Zustand der Integration in den Reiter Protokolle, für einen Fehlerbericht.",
+        "es": "Escribe el estado de la integración en la pestaña Registros, para adjuntar a un informe de error."
+      },
+      "timeout_seconds": 10
+    }
+  ],
+  "widgets": [
+    {
+      "key": "tide_today",
+      "label": {
+        "en": "Tide of the day",
+        "fr": "Marée du jour",
+        "de": "Gezeit des Tages",
+        "es": "Marea del día"
+      },
+      "description": {
+        "en": "Water height now, trend, next tide and the curve of the day.",
+        "fr": "Hauteur d’eau, tendance, prochaine marée et courbe du jour.",
+        "de": "Wasserhöhe, Tendenz, nächste Gezeit und Kurve des Tages.",
+        "es": "Altura del agua, tendencia, próxima marea y curva del día."
+      },
+      "icon": "activity",
+      "settings": [
+        {
+          "key": "port",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Harbor",
+            "fr": "Port",
+            "de": "Hafen",
+            "es": "Puerto"
+          },
+          "description": {
+            "en": "A harbor device. Empty: the first harbor of the configuration.",
+            "fr": "Un appareil port. Vide : le premier port de la configuration.",
+            "de": "Ein Hafengerät. Leer: der erste Hafen der Konfiguration.",
+            "es": "Un dispositivo de puerto. Vacío: el primer puerto de la configuración."
+          },
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "tide_list",
+      "label": {
+        "en": "Next tides",
+        "fr": "Prochaines marées",
+        "de": "Nächste Gezeiten",
+        "es": "Próximas mareas"
+      },
+      "description": {
+        "en": "The next eight high and low tides, with their coefficient.",
+        "fr": "Les huit prochaines pleines et basses mers, avec leur coefficient.",
+        "de": "Die nächsten acht Hoch- und Niedrigwasser mit Koeffizient.",
+        "es": "Las próximas ocho pleamares y bajamares, con su coeficiente."
+      },
+      "icon": "list",
+      "settings": [
+        {
+          "key": "port",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Harbor",
+            "fr": "Port",
+            "de": "Hafen",
+            "es": "Puerto"
+          },
+          "description": {
+            "en": "A harbor device. Empty: the first harbor of the configuration.",
+            "fr": "Un appareil port. Vide : le premier port de la configuration.",
+            "de": "Ein Hafengerät. Leer: der erste Hafen der Konfiguration.",
+            "es": "Un dispositivo de puerto. Vacío: el primer puerto de la configuración."
+          },
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "coefficients",
+      "label": {
+        "en": "Tide coefficients",
+        "fr": "Coefficients de marée",
+        "de": "Gezeitenkoeffizienten",
+        "es": "Coeficientes de marea"
+      },
+      "description": {
+        "en": "The coefficients of the coming two weeks and the next spring tide.",
+        "fr": "Les coefficients des deux semaines à venir et la prochaine grande marée.",
+        "de": "Die Koeffizienten der nächsten zwei Wochen und die nächste Springtide.",
+        "es": "Los coeficientes de las próximas dos semanas y la próxima marea viva."
+      },
+      "icon": "bar-chart-2",
+      "settings": [
+        {
+          "key": "port",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Harbor",
+            "fr": "Port",
+            "de": "Hafen",
+            "es": "Puerto"
+          },
+          "description": {
+            "en": "A harbor device. Empty: the first harbor of the configuration.",
+            "fr": "Un appareil port. Vide : le premier port de la configuration.",
+            "de": "Ein Hafengerät. Leer: der erste Hafen der Konfiguration.",
+            "es": "Un dispositivo de puerto. Vacío: el primer puerto de la configuración."
+          },
+          "required": false
+        }
+      ]
+    }
+  ],
+  "scene_triggers": [
+    {
+      "key": "tide_upcoming",
+      "label": {
+        "en": "Tide: high or low tide",
+        "fr": "Marée : pleine ou basse mer",
+        "de": "Gezeiten: Hoch- oder Niedrigwasser",
+        "es": "Marea: pleamar o bajamar"
+      },
+      "description": {
+        "en": "At the time of a high or low tide, or a chosen delay before it.",
+        "fr": "À l’heure d’une pleine ou basse mer, ou un délai choisi avant.",
+        "de": "Zum Zeitpunkt eines Hoch- oder Niedrigwassers oder eine gewählte Zeit davor.",
+        "es": "A la hora de una pleamar o bajamar, o un tiempo elegido antes."
+      },
+      "fields": [
+        {
+          "key": "port",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Harbor",
+            "fr": "Port",
+            "de": "Hafen",
+            "es": "Puerto"
+          },
+          "description": {
+            "en": "A harbor device. Leave empty for any.",
+            "fr": "Un appareil port. Laissez vide pour tous.",
+            "de": "Ein Hafengerät. Leer lassen für jeden.",
+            "es": "Un dispositivo de puerto. Vacío para cualquiera."
+          },
+          "required": false
+        },
+        {
+          "key": "tide",
+          "type": "select",
+          "label": {
+            "en": "Tide",
+            "fr": "Marée",
+            "de": "Gezeit",
+            "es": "Marea"
+          },
+          "description": {
+            "en": "Leave empty for both.",
+            "fr": "Laissez vide pour les deux.",
+            "de": "Leer lassen für beide.",
+            "es": "Déjelo vacío para ambas."
+          },
+          "options": [
+            {
+              "value": "high",
+              "label": {
+                "en": "High tide",
+                "fr": "Pleine mer",
+                "de": "Hochwasser",
+                "es": "Pleamar"
+              }
+            },
+            {
+              "value": "low",
+              "label": {
+                "en": "Low tide",
+                "fr": "Basse mer",
+                "de": "Niedrigwasser",
+                "es": "Bajamar"
+              }
+            }
+          ],
+          "required": false
+        },
+        {
+          "key": "minutes_before",
+          "type": "select",
+          "label": {
+            "en": "When",
+            "fr": "Quand",
+            "de": "Wann",
+            "es": "Cuándo"
+          },
+          "options": [
+            {
+              "value": "0",
+              "label": {
+                "en": "At the time of the tide",
+                "fr": "À l’heure de la marée",
+                "de": "Zum Zeitpunkt der Gezeit",
+                "es": "A la hora de la marea"
+              }
+            },
+            {
+              "value": "15",
+              "label": {
+                "en": "15 min before",
+                "fr": "15 min avant",
+                "de": "15 Min. vorher",
+                "es": "15 min antes"
+              }
+            },
+            {
+              "value": "30",
+              "label": {
+                "en": "30 min before",
+                "fr": "30 min avant",
+                "de": "30 Min. vorher",
+                "es": "30 min antes"
+              }
+            },
+            {
+              "value": "45",
+              "label": {
+                "en": "45 min before",
+                "fr": "45 min avant",
+                "de": "45 Min. vorher",
+                "es": "45 min antes"
+              }
+            },
+            {
+              "value": "60",
+              "label": {
+                "en": "1 h before",
+                "fr": "1 h avant",
+                "de": "1 Std. vorher",
+                "es": "1 h antes"
+              }
+            },
+            {
+              "value": "90",
+              "label": {
+                "en": "1 h 30 min before",
+                "fr": "1 h 30 avant",
+                "de": "1 Std. 30 Min. vorher",
+                "es": "1 h 30 min antes"
+              }
+            },
+            {
+              "value": "120",
+              "label": {
+                "en": "2 h before",
+                "fr": "2 h avant",
+                "de": "2 Std. vorher",
+                "es": "2 h antes"
+              }
+            },
+            {
+              "value": "180",
+              "label": {
+                "en": "3 h before",
+                "fr": "3 h avant",
+                "de": "3 Std. vorher",
+                "es": "3 h antes"
+              }
+            },
+            {
+              "value": "240",
+              "label": {
+                "en": "4 h before",
+                "fr": "4 h avant",
+                "de": "4 Std. vorher",
+                "es": "4 h antes"
+              }
+            },
+            {
+              "value": "360",
+              "label": {
+                "en": "6 h before",
+                "fr": "6 h avant",
+                "de": "6 Std. vorher",
+                "es": "6 h antes"
+              }
+            }
+          ],
+          "required": true
+        }
+      ],
+      "variables": [
+        {
+          "key": "port_name",
+          "type": "string",
+          "label": {
+            "en": "Harbor",
+            "fr": "Port",
+            "de": "Hafen",
+            "es": "Puerto"
+          }
+        },
+        {
+          "key": "tide",
+          "type": "string",
+          "label": {
+            "en": "Tide",
+            "fr": "Marée",
+            "de": "Gezeit",
+            "es": "Marea"
+          },
+          "description": {
+            "en": "high or low.",
+            "fr": "high (pleine mer) ou low (basse mer).",
+            "de": "high (Hochwasser) oder low (Niedrigwasser).",
+            "es": "high (pleamar) o low (bajamar)."
+          }
+        },
+        {
+          "key": "tide_time",
+          "type": "string",
+          "label": {
+            "en": "Time of the tide",
+            "fr": "Heure de la marée",
+            "de": "Uhrzeit der Gezeit",
+            "es": "Hora de la marea"
+          },
+          "description": {
+            "en": "HH:MM, timezone of Gladys.",
+            "fr": "HH:MM, fuseau de Gladys.",
+            "de": "HH:MM, Zeitzone von Gladys.",
+            "es": "HH:MM, zona horaria de Gladys."
+          }
+        },
+        {
+          "key": "height",
+          "type": "number",
+          "label": {
+            "en": "Height (m)",
+            "fr": "Hauteur (m)",
+            "de": "Höhe (m)",
+            "es": "Altura (m)"
+          },
+          "description": {
+            "en": "Above chart datum.",
+            "fr": "Au-dessus du zéro des cartes.",
+            "de": "Über Seekartennull.",
+            "es": "Sobre el cero hidrográfico."
+          }
+        },
+        {
+          "key": "coefficient",
+          "type": "number",
+          "label": {
+            "en": "Coefficient",
+            "fr": "Coefficient",
+            "de": "Koeffizient",
+            "es": "Coeficiente"
+          },
+          "description": {
+            "en": "-1 when unknown.",
+            "fr": "-1 si inconnu.",
+            "de": "-1, wenn unbekannt.",
+            "es": "-1 si se desconoce."
+          }
+        },
+        {
+          "key": "minutes_before",
+          "type": "string",
+          "label": {
+            "en": "Minutes before",
+            "fr": "Minutes avant",
+            "de": "Minuten vorher",
+            "es": "Minutos antes"
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary",
+            "fr": "Résumé",
+            "de": "Zusammenfassung",
+            "es": "Resumen"
+          },
+          "description": {
+            "en": "A sentence ready for a message.",
+            "fr": "Une phrase prête pour un message.",
+            "de": "Ein Satz für eine Nachricht.",
+            "es": "Una frase lista para un mensaje."
+          }
+        },
+        {
+          "key": "tide_datetime",
+          "type": "string",
+          "label": {
+            "en": "Date and time (ISO)",
+            "fr": "Date et heure (ISO)",
+            "de": "Datum und Uhrzeit (ISO)",
+            "es": "Fecha y hora (ISO)"
+          },
+          "description": {
+            "en": "UTC.",
+            "fr": "UTC.",
+            "de": "UTC.",
+            "es": "UTC."
+          }
+        }
+      ]
+    },
+    {
+      "key": "spring_tide",
+      "label": {
+        "en": "Tide: spring tide",
+        "fr": "Marée : grande marée",
+        "de": "Gezeiten: Springtide",
+        "es": "Marea: marea viva"
+      },
+      "description": {
+        "en": "A high tide whose coefficient reaches a threshold, at its time or a chosen delay before.",
+        "fr": "Une pleine mer dont le coefficient atteint un seuil, à son heure ou un délai choisi avant.",
+        "de": "Ein Hochwasser, dessen Koeffizient eine Schwelle erreicht, zu seiner Zeit oder eine gewählte Zeit davor.",
+        "es": "Una pleamar cuyo coeficiente alcanza un umbral, a su hora o un tiempo elegido antes."
+      },
+      "fields": [
+        {
+          "key": "port",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Harbor",
+            "fr": "Port",
+            "de": "Hafen",
+            "es": "Puerto"
+          },
+          "description": {
+            "en": "A harbor device. Leave empty for any.",
+            "fr": "Un appareil port. Laissez vide pour tous.",
+            "de": "Ein Hafengerät. Leer lassen für jeden.",
+            "es": "Un dispositivo de puerto. Vacío para cualquiera."
+          },
+          "required": false
+        },
+        {
+          "key": "min_coefficient",
+          "type": "select",
+          "label": {
+            "en": "Coefficient of at least",
+            "fr": "Coefficient d’au moins",
+            "de": "Koeffizient mindestens",
+            "es": "Coeficiente de al menos"
+          },
+          "options": [
+            {
+              "value": "70",
+              "label": {
+                "en": "70",
+                "fr": "70",
+                "de": "70",
+                "es": "70"
+              }
+            },
+            {
+              "value": "80",
+              "label": {
+                "en": "80",
+                "fr": "80",
+                "de": "80",
+                "es": "80"
+              }
+            },
+            {
+              "value": "90",
+              "label": {
+                "en": "90",
+                "fr": "90",
+                "de": "90",
+                "es": "90"
+              }
+            },
+            {
+              "value": "95",
+              "label": {
+                "en": "95",
+                "fr": "95",
+                "de": "95",
+                "es": "95"
+              }
+            },
+            {
+              "value": "100",
+              "label": {
+                "en": "100",
+                "fr": "100",
+                "de": "100",
+                "es": "100"
+              }
+            },
+            {
+              "value": "105",
+              "label": {
+                "en": "105",
+                "fr": "105",
+                "de": "105",
+                "es": "105"
+              }
+            },
+            {
+              "value": "110",
+              "label": {
+                "en": "110",
+                "fr": "110",
+                "de": "110",
+                "es": "110"
+              }
+            },
+            {
+              "value": "115",
+              "label": {
+                "en": "115",
+                "fr": "115",
+                "de": "115",
+                "es": "115"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "key": "minutes_before",
+          "type": "select",
+          "label": {
+            "en": "When",
+            "fr": "Quand",
+            "de": "Wann",
+            "es": "Cuándo"
+          },
+          "options": [
+            {
+              "value": "0",
+              "label": {
+                "en": "At the time of the tide",
+                "fr": "À l’heure de la marée",
+                "de": "Zum Zeitpunkt der Gezeit",
+                "es": "A la hora de la marea"
+              }
+            },
+            {
+              "value": "60",
+              "label": {
+                "en": "1 h before",
+                "fr": "1 h avant",
+                "de": "1 Std. vorher",
+                "es": "1 h antes"
+              }
+            },
+            {
+              "value": "120",
+              "label": {
+                "en": "2 h before",
+                "fr": "2 h avant",
+                "de": "2 Std. vorher",
+                "es": "2 h antes"
+              }
+            },
+            {
+              "value": "180",
+              "label": {
+                "en": "3 h before",
+                "fr": "3 h avant",
+                "de": "3 Std. vorher",
+                "es": "3 h antes"
+              }
+            },
+            {
+              "value": "360",
+              "label": {
+                "en": "6 h before",
+                "fr": "6 h avant",
+                "de": "6 Std. vorher",
+                "es": "6 h antes"
+              }
+            },
+            {
+              "value": "720",
+              "label": {
+                "en": "12 h before",
+                "fr": "12 h avant",
+                "de": "12 Std. vorher",
+                "es": "12 h antes"
+              }
+            },
+            {
+              "value": "1440",
+              "label": {
+                "en": "The day before (24 h)",
+                "fr": "La veille (24 h)",
+                "de": "Am Vortag (24 Std.)",
+                "es": "El día antes (24 h)"
+              }
+            }
+          ],
+          "required": true
+        }
+      ],
+      "variables": [
+        {
+          "key": "port_name",
+          "type": "string",
+          "label": {
+            "en": "Harbor",
+            "fr": "Port",
+            "de": "Hafen",
+            "es": "Puerto"
+          }
+        },
+        {
+          "key": "tide",
+          "type": "string",
+          "label": {
+            "en": "Tide",
+            "fr": "Marée",
+            "de": "Gezeit",
+            "es": "Marea"
+          },
+          "description": {
+            "en": "high or low.",
+            "fr": "high (pleine mer) ou low (basse mer).",
+            "de": "high (Hochwasser) oder low (Niedrigwasser).",
+            "es": "high (pleamar) o low (bajamar)."
+          }
+        },
+        {
+          "key": "tide_time",
+          "type": "string",
+          "label": {
+            "en": "Time of the tide",
+            "fr": "Heure de la marée",
+            "de": "Uhrzeit der Gezeit",
+            "es": "Hora de la marea"
+          },
+          "description": {
+            "en": "HH:MM, timezone of Gladys.",
+            "fr": "HH:MM, fuseau de Gladys.",
+            "de": "HH:MM, Zeitzone von Gladys.",
+            "es": "HH:MM, zona horaria de Gladys."
+          }
+        },
+        {
+          "key": "height",
+          "type": "number",
+          "label": {
+            "en": "Height (m)",
+            "fr": "Hauteur (m)",
+            "de": "Höhe (m)",
+            "es": "Altura (m)"
+          },
+          "description": {
+            "en": "Above chart datum.",
+            "fr": "Au-dessus du zéro des cartes.",
+            "de": "Über Seekartennull.",
+            "es": "Sobre el cero hidrográfico."
+          }
+        },
+        {
+          "key": "coefficient",
+          "type": "number",
+          "label": {
+            "en": "Coefficient",
+            "fr": "Coefficient",
+            "de": "Koeffizient",
+            "es": "Coeficiente"
+          },
+          "description": {
+            "en": "-1 when unknown.",
+            "fr": "-1 si inconnu.",
+            "de": "-1, wenn unbekannt.",
+            "es": "-1 si se desconoce."
+          }
+        },
+        {
+          "key": "minutes_before",
+          "type": "string",
+          "label": {
+            "en": "Minutes before",
+            "fr": "Minutes avant",
+            "de": "Minuten vorher",
+            "es": "Minutos antes"
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary",
+            "fr": "Résumé",
+            "de": "Zusammenfassung",
+            "es": "Resumen"
+          },
+          "description": {
+            "en": "A sentence ready for a message.",
+            "fr": "Une phrase prête pour un message.",
+            "de": "Ein Satz für eine Nachricht.",
+            "es": "Una frase lista para un mensaje."
+          }
+        },
+        {
+          "key": "low_tide_time",
+          "type": "string",
+          "label": {
+            "en": "Following low tide",
+            "fr": "Basse mer suivante",
+            "de": "Folgendes Niedrigwasser",
+            "es": "Bajamar siguiente"
+          },
+          "description": {
+            "en": "HH:MM: the best time to fish on foot.",
+            "fr": "HH:MM : le meilleur moment pour la pêche à pied.",
+            "de": "HH:MM: beste Zeit zum Wattfischen.",
+            "es": "HH:MM: el mejor momento para el marisqueo."
+          }
+        },
+        {
+          "key": "low_tide_height",
+          "type": "number",
+          "label": {
+            "en": "Its height (m)",
+            "fr": "Sa hauteur (m)",
+            "de": "Seine Höhe (m)",
+            "es": "Su altura (m)"
+          },
+          "description": {
+            "en": "-1 when unknown.",
+            "fr": "-1 si inconnu.",
+            "de": "-1, wenn unbekannt.",
+            "es": "-1 si se desconoce."
+          }
+        }
+      ]
+    }
+  ],
+  "scene_actions": [
+    {
+      "key": "get_next_tide",
+      "label": {
+        "en": "Tide: get the next tide",
+        "fr": "Marée : lire la prochaine marée",
+        "de": "Gezeiten: nächste Gezeit lesen",
+        "es": "Marea: leer la próxima marea"
+      },
+      "description": {
+        "en": "The next high or low tide of a harbor, for a message.",
+        "fr": "La prochaine pleine ou basse mer d’un port, pour un message.",
+        "de": "Das nächste Hoch- oder Niedrigwasser eines Hafens, für eine Nachricht.",
+        "es": "La próxima pleamar o bajamar de un puerto, para un mensaje."
+      },
+      "timeout_seconds": 60,
+      "fields": [
+        {
+          "key": "port",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Harbor",
+            "fr": "Port",
+            "de": "Hafen",
+            "es": "Puerto"
+          },
+          "description": {
+            "en": "Leave empty for the first harbor of the configuration.",
+            "fr": "Laissez vide pour le premier port de la configuration.",
+            "de": "Leer lassen für den ersten Hafen der Konfiguration.",
+            "es": "Vacío para el primer puerto de la configuración."
+          },
+          "required": false
+        },
+        {
+          "key": "tide",
+          "type": "select",
+          "label": {
+            "en": "Tide",
+            "fr": "Marée",
+            "de": "Gezeit",
+            "es": "Marea"
+          },
+          "options": [
+            {
+              "value": "any",
+              "label": {
+                "en": "The next one",
+                "fr": "La prochaine",
+                "de": "Die nächste",
+                "es": "La próxima"
+              }
+            },
+            {
+              "value": "high",
+              "label": {
+                "en": "High tide",
+                "fr": "Pleine mer",
+                "de": "Hochwasser",
+                "es": "Pleamar"
+              }
+            },
+            {
+              "value": "low",
+              "label": {
+                "en": "Low tide",
+                "fr": "Basse mer",
+                "de": "Niedrigwasser",
+                "es": "Bajamar"
+              }
+            }
+          ],
+          "default": "any",
+          "required": false
+        }
+      ],
+      "outputs": [
+        {
+          "key": "port_name",
+          "type": "string",
+          "label": {
+            "en": "Harbor",
+            "fr": "Port",
+            "de": "Hafen",
+            "es": "Puerto"
+          }
+        },
+        {
+          "key": "tide",
+          "type": "string",
+          "label": {
+            "en": "Tide",
+            "fr": "Marée",
+            "de": "Gezeit",
+            "es": "Marea"
+          },
+          "description": {
+            "en": "high or low.",
+            "fr": "high (pleine mer) ou low (basse mer).",
+            "de": "high (Hochwasser) oder low (Niedrigwasser).",
+            "es": "high (pleamar) o low (bajamar)."
+          }
+        },
+        {
+          "key": "tide_time",
+          "type": "string",
+          "label": {
+            "en": "Time of the tide",
+            "fr": "Heure de la marée",
+            "de": "Uhrzeit der Gezeit",
+            "es": "Hora de la marea"
+          },
+          "description": {
+            "en": "HH:MM, timezone of Gladys.",
+            "fr": "HH:MM, fuseau de Gladys.",
+            "de": "HH:MM, Zeitzone von Gladys.",
+            "es": "HH:MM, zona horaria de Gladys."
+          }
+        },
+        {
+          "key": "height",
+          "type": "number",
+          "label": {
+            "en": "Height (m)",
+            "fr": "Hauteur (m)",
+            "de": "Höhe (m)",
+            "es": "Altura (m)"
+          },
+          "description": {
+            "en": "Above chart datum.",
+            "fr": "Au-dessus du zéro des cartes.",
+            "de": "Über Seekartennull.",
+            "es": "Sobre el cero hidrográfico."
+          }
+        },
+        {
+          "key": "coefficient",
+          "type": "number",
+          "label": {
+            "en": "Coefficient",
+            "fr": "Coefficient",
+            "de": "Koeffizient",
+            "es": "Coeficiente"
+          },
+          "description": {
+            "en": "-1 when unknown.",
+            "fr": "-1 si inconnu.",
+            "de": "-1, wenn unbekannt.",
+            "es": "-1 si se desconoce."
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary",
+            "fr": "Résumé",
+            "de": "Zusammenfassung",
+            "es": "Resumen"
+          },
+          "description": {
+            "en": "A sentence ready for a message.",
+            "fr": "Une phrase prête pour un message.",
+            "de": "Ein Satz für eine Nachricht.",
+            "es": "Una frase lista para un mensaje."
+          }
+        },
+        {
+          "key": "tide_datetime",
+          "type": "string",
+          "label": {
+            "en": "Date and time (ISO)",
+            "fr": "Date et heure (ISO)",
+            "de": "Datum und Uhrzeit (ISO)",
+            "es": "Fecha y hora (ISO)"
+          },
+          "description": {
+            "en": "UTC.",
+            "fr": "UTC.",
+            "de": "UTC.",
+            "es": "UTC."
+          }
+        },
+        {
+          "key": "minutes",
+          "type": "number",
+          "label": {
+            "en": "In (minutes)",
+            "fr": "Dans (minutes)",
+            "de": "In (Minuten)",
+            "es": "En (minutos)"
+          }
+        },
+        {
+          "key": "current_height",
+          "type": "number",
+          "label": {
+            "en": "Water height now (m)",
+            "fr": "Hauteur d’eau actuelle (m)",
+            "de": "Wasserhöhe jetzt (m)",
+            "es": "Altura del agua ahora (m)"
+          },
+          "description": {
+            "en": "-1 when unknown.",
+            "fr": "-1 si inconnu.",
+            "de": "-1, wenn unbekannt.",
+            "es": "-1 si se desconoce."
+          }
+        },
+        {
+          "key": "trend",
+          "type": "string",
+          "label": {
+            "en": "Trend",
+            "fr": "Tendance",
+            "de": "Tendenz",
+            "es": "Tendencia"
+          },
+          "description": {
+            "en": "rising or falling.",
+            "fr": "rising (montante) ou falling (descendante).",
+            "de": "rising (steigend) oder falling (fallend).",
+            "es": "rising (subiendo) o falling (bajando)."
+          }
+        }
+      ]
+    }
+  ]
+}

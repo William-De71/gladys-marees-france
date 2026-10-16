@@ -1,0 +1,677 @@
+{
+  "devices": {
+    "port": {
+      "external_id": "ext:test-integration:port:BREST",
+      "should_poll": false,
+      "params": ["PORT_CODE", "COORDINATES"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:port:BREST:height",
+          "category": "level-sensor",
+          "type": "decimal",
+          "unit": "m",
+          "min": -5,
+          "max": 20,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:port:BREST:trend",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:port:BREST:next_tide",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:port:BREST:next_high_in",
+          "category": "duration",
+          "type": "integer",
+          "unit": "minutes",
+          "min": 0,
+          "max": 1500,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:port:BREST:next_high_height",
+          "category": "level-sensor",
+          "type": "decimal",
+          "unit": "m",
+          "min": -5,
+          "max": 20,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:port:BREST:next_low_in",
+          "category": "duration",
+          "type": "integer",
+          "unit": "minutes",
+          "min": 0,
+          "max": 1500,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:port:BREST:next_low_height",
+          "category": "level-sensor",
+          "type": "decimal",
+          "unit": "m",
+          "min": -5,
+          "max": 20,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:port:BREST:coefficient",
+          "category": "counter-sensor",
+          "type": "integer",
+          "min": 0,
+          "max": 130,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:port:BREST:coefficient_tomorrow",
+          "category": "counter-sensor",
+          "type": "integer",
+          "min": 0,
+          "max": 130,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    }
+  },
+  "manifest": {
+    "config_schema": [
+      {
+        "key": "intro",
+        "type": "section"
+      },
+      {
+        "key": "port",
+        "type": "select"
+      },
+      {
+        "key": "other_ports",
+        "type": "string"
+      },
+      {
+        "key": "language",
+        "type": "select"
+      }
+    ],
+    "port_options": [
+      "ABIDJAN-VRIDI",
+      "AGADIR",
+      "AHE_TENUKUPARA",
+      "AJACCIO",
+      "ALDERNEY_BRAYE",
+      "ALPHA-BAIE_DE_SEINE",
+      "PRIMEL",
+      "ANSE_LONGUE_NAMAOURA",
+      "ANTSIRANANA",
+      "ARCACHON_EYRAC",
+      "ARRADON",
+      "ARROMANCHES-LES-BAINS",
+      "ARUTUA",
+      "AUDIERNE",
+      "AURAY_SAINT-GOUSTAN",
+      "AVATORU_LAGON",
+      "BAIE_DE_CHASSELOUP",
+      "BAIE_DE_BANARE_POUM",
+      "BAIE_DE_GADJI",
+      "BAIE_DE_GOMEN",
+      "KOUAKOUE",
+      "KUTO",
+      "OUESSANT_LAMPAUL",
+      "RHO",
+      "TADINE",
+      "TOUHO",
+      "BAIE_DU_PRONY",
+      "BAIE_DU_STIFF",
+      "BAIE_HOPEFUL",
+      "BAIE_LAROSE",
+      "BAIE_NORVEGIENNE",
+      "BAIE_OISEAU",
+      "OUARA",
+      "OUINNE",
+      "BANC_DE_LA_ZELEE",
+      "SANDETTIE_EST",
+      "VERGOYER_EST",
+      "BANYULS",
+      "BARFLEUR",
+      "BASE_DUMONT_D_URVILLE",
+      "BASSAS_DA_INDIA",
+      "BASSE_TERRE",
+      "BASTIA",
+      "BENODET",
+      "BOUEE_FORT-MAHON",
+      "BEYROUTH",
+      "BINIC",
+      "BISCARROSSE",
+      "BOLAMA",
+      "BONIFACIO",
+      "BOUCAU-BAYONNE",
+      "L_ECREVIERE",
+      "ENTREE_BAIE_DE_SOMME",
+      "BOUEE_FROMENTINE",
+      "BOUEE_LE_GOELAND",
+      "BOUJDOUR",
+      "BOULOGNE-SUR-MER",
+      "BOURAIL",
+      "BREHEC",
+      "BREST",
+      "BRIGNOGAN",
+      "BUBAQUE",
+      "CALAIS",
+      "CALVI",
+      "CAMARET-SUR-MER",
+      "CANCALE",
+      "CAP_CHEVALIER_MARTINIQUE",
+      "CAP_FERRET",
+      "CAPBRETON",
+      "CARTERET",
+      "CASABLANCA",
+      "CAYEUX-SUR-MER",
+      "CENTURI",
+      "CEUTA",
+      "MORLAIX_PEN_AL_LANN",
+      "CHEPENEHE",
+      "CHERBOURG",
+      "CLIPPERTON",
+      "CONAKRY",
+      "CONCARNEAU",
+      "CORDOUAN",
+      "COTONOU",
+      "COURSEULLES_LARGE",
+      "DAHOUET",
+      "DAKAR",
+      "DAKHLA",
+      "DEGRAD_DES_CANNES",
+      "DESHAIES",
+      "DIELETTE",
+      "DIEPPE",
+      "DIVES-SUR-MER",
+      "DJIBOUTI",
+      "DOUALA",
+      "DOUARNENEZ",
+      "DOUEOULOU",
+      "DUNKERQUE",
+      "DUNKERQUE_OUEST",
+      "DZAOUDZI",
+      "MAZAGAN",
+      "EL_MHIREZ",
+      "ENTREE_RIVIERE_ETEL",
+      "ERQUY_PORT",
+      "ESSAOUIRA",
+      "ETRETAT",
+      "FANGATAUFA_FREGATE",
+      "FANGATAUFA_LARGE",
+      "FARATEA_TARAVAO",
+      "FECAMP",
+      "FORT-BOYARD",
+      "FORT-ESPAGNOL",
+      "FORT-DE-FRANCE",
+      "FOS_SUR_MER",
+      "FOUE",
+      "FROMENTINE_EMBARCADERE",
+      "GORO",
+      "GOURY",
+      "GRANDCAMP",
+      "ILES_CHAUSEY",
+      "GRANVILLE_LE_COCALEU",
+      "GRAVELINES",
+      "ST-PETER_PORT",
+      "GUSTAVIA",
+      "MOOREA_HAAPITI",
+      "HAKAHAU",
+      "WALLIS_HALALO",
+      "HAO_PASSE_KAKI",
+      "HELLVILLE",
+      "HENDAYE",
+      "HERQUEVILLE",
+      "HIENGHENE",
+      "HOEDIC",
+      "HOUAT",
+      "ILE_AMEDEE",
+      "ILE_AUX_MOINES_ER_GORED",
+      "ILE_CROZET",
+      "ILE_D_AIX",
+      "BREHAT_MEN_JOLIGUET",
+      "ILE_DE_SEIN_NORD",
+      "LES_OITELLIERES",
+      "EIAO_VAITUHA",
+      "ILE_EUROPA",
+      "ILE_JUAN_DE_NOVA",
+      "ILE_KOMAYTOU_LARGE",
+      "ILE_LONGUE_CHESTERFIELD",
+      "ILE_MIQUELON",
+      "MOLENE_NORD",
+      "SURPRISE",
+      "ILE_ROUSSE",
+      "ILES_DU_SALUT",
+      "ILES_GLORIEUSES",
+      "ILES_SAINT-MARCOUF",
+      "ILET_LA_MERE",
+      "ILOT_MATO",
+      "N_DIE",
+      "N_DO",
+      "JORF_LASFAR",
+      "KAMSAR",
+      "KOUMAC",
+      "KOUROU",
+      "KSAR_ES_SRHIR",
+      "ABER_BENOIT_MEAN_RENEAT",
+      "LANILDUT",
+      "ABER_WRAC_H",
+      "AIGUILLON_SUR_MER",
+      "L_HERBAUDIERE",
+      "LA_COTINIERE",
+      "LA_DESIRADE",
+      "LA_FIGUEIRETTE",
+      "LA_PALMYRE",
+      "LA_ROCHE",
+      "LA_ROCHELLE-PALLICE",
+      "LA_TRINITE_MARTINIQUE",
+      "LA_TRINITE-SUR-MER",
+      "LAAYOUNE",
+      "LACANAU_LARGE",
+      "LARMOR-BADEN",
+      "LE_CONQUET",
+      "LE_CROISIC",
+      "LE_DELLEC",
+      "LE_FRANCOIS",
+      "LE_GRAND_CHARPENTIER",
+      "LE_GUILVINEC",
+      "LE_HAVRE",
+      "ANTIFER",
+      "LE_LARIVOT",
+      "LE_LEGUE_BOUEE",
+      "LE_LOGEO",
+      "LE_MARIN",
+      "LE_PALAIS",
+      "LE_POULDU",
+      "LE_POULIGUEN",
+      "LE_ROBERT",
+      "LE_SENEQUET",
+      "LE_TOUQUET",
+      "LE_TREPORT",
+      "LE_VAUCLIN",
+      "PTE_DE_GRAVE_LE_VERDON",
+      "LEAVA_FUTUNA",
+      "LES_ARDENTES",
+      "LES_HEAUX-DE-BREHAT",
+      "LES_MINQUIERS",
+      "ROCHES_DOUVRES",
+      "LES_SABLES-D_OLONNE",
+      "LESCONIL",
+      "LEZARDRIEUX_PORT",
+      "LIBREVILLE",
+      "LOCMARIAQUER",
+      "LOCQUEMEAU",
+      "LOCQUIREC",
+      "LOCTUDY",
+      "LOME",
+      "LONGONI",
+      "PORT_COMMERCE_LORIENT",
+      "MAHAMATE",
+      "MAKATEA",
+      "POUHEVA_MAKEMO",
+      "MARIE-GALANTE_GD_BOURG",
+      "MARSEILLE",
+      "WALLIS_MATA_UTU",
+      "MATAVAI",
+      "MEHDIA",
+      "MIMIZAN",
+      "MOHAMMEDIA",
+      "MONACO",
+      "MORGAT",
+      "QUAI_DE_FARE",
+      "BREST_MOULIN-BLANC",
+      "RECIF_MTITI",
+      "NEPOUI",
+      "MURUROA_ANEMONE",
+      "NICE",
+      "NOUADHIBOU",
+      "NOUAKCHOTT",
+      "NOUMEA_CHALEIX",
+      "NOUMEA_NUMBO",
+      "SAFI_SUD",
+      "OMONVILLE-LA-ROGUE",
+      "OUANO",
+      "OUISTREHAM",
+      "PAAGOUMENE",
+      "PAIMPOL",
+      "PAPEETE_FARE-UTE",
+      "MOOREA_PAPETOAI",
+      "PENERF",
+      "GLENAN_PENFRET",
+      "PERROS-GUIREC_TRESTRAOU",
+      "HONFLEUR",
+      "BALISE_A",
+      "PLOGOFF",
+      "PLOUMANACH",
+      "WHARF_DE_PLUM",
+      "POINGAM",
+      "POINTE_D_AGON",
+      "POINTE_DE_GATSEAU",
+      "PORT-BLOC",
+      "POINTE-AIGUILLON",
+      "POINTE-DE-PANDOP",
+      "POINTE_DE_SAINT-GILDAS",
+      "POINTE_DES_GALETS",
+      "LES_HATTES",
+      "POINTE-A-PITRE",
+      "POINTE_NOIRE",
+      "PONERIHOUEN",
+      "PONT_SEUDRE",
+      "PORNIC",
+      "PORNICHET",
+      "PORO",
+      "PORT-BOISE",
+      "PORT_CAMARGUE",
+      "ETEL",
+      "PORT_DE_BOULARI",
+      "PORT_DE_PRONY",
+      "SETE",
+      "LE_CROUESTY",
+      "PLOGOFF_PORT-DU-VORLEN",
+      "PORT_FERREOL",
+      "PORT_MANECH",
+      "PORT_SONARA",
+      "PORT-AUX-FRANCAIS",
+      "PORT-BENI",
+      "PORT-COMBUI",
+      "PORT_DE_BOUC",
+      "PORT-EN-BESSIN",
+      "PORT-GENTIL",
+      "PORT-HALIGUEN",
+      "PORT-JOINVILLE",
+      "PORT_LA_FORET",
+      "PORT_LA_NOUVELLE",
+      "PORT-LOUIS_LOCMALO",
+      "PORT-MARIA",
+      "PORT-MARTIN",
+      "PORT-NAVALO",
+      "PORT-TUDY",
+      "PORT-VENDRES",
+      "PORTBAIL",
+      "PORTIVY",
+      "PORTSALL",
+      "POUEBO",
+      "POAMBOA",
+      "POYA",
+      "RABAT",
+      "RAIRUA",
+      "RAPA",
+      "GEYSER",
+      "RICHARD",
+      "RIKITEA",
+      "DJOGUE",
+      "MAMIE",
+      "ROCHERS_NOIRS",
+      "ROSCOFF",
+      "FAKARAVA_ROTOAVA",
+      "ROYAN",
+      "RUYTINGEN_SW",
+      "SADA",
+      "SAFI",
+      "SAINT_HELIER",
+      "PASSAGE_SAINT-ARMEL",
+      "SAINT_BRIAC_SUR_MER",
+      "SAINT-CAST",
+      "SAINT-DENIS_D_OLERON",
+      "SAINT-GERMAIN-SUR-AY",
+      "ST-GILLES-CROIX-DE-VIE",
+      "SAINT-GUENOLE",
+      "SOCOA",
+      "SAINT-LAURENT_DU_MARONI",
+      "SAINT-LEU",
+      "SAINT_LOUIS",
+      "SAINT-MALO",
+      "SAINT-MARTIN_MARIGOT",
+      "SAINT-MARTIN_DE_RE",
+      "SAINT-NAZAIRE",
+      "ILE_SAINT-PAUL",
+      "ILE_SAINT-PIERRE",
+      "SAINT-PIERRE_LA_REUNION",
+      "SAINT-PIERRE_MARTINIQUE",
+      "SAINT-QUAY-PORTRIEUX",
+      "SAINT-VAAST-LA-HOUGUE",
+      "SAINT-VALERY-EN-CAUX",
+      "SAINTE_EVETTE",
+      "SAINTE_MARIE_LA_REUNION",
+      "SAN_PEDRO",
+      "SASSANDRA",
+      "SELAATA",
+      "SFAX",
+      "SOLENZARA",
+      "SOUR",
+      "TAHANEA",
+      "TAIOHAE_SHOM",
+      "TAMAJARUSH",
+      "TAN-TAN",
+      "TANGER",
+      "TANGER_MED",
+      "TAO",
+      "TARFAYA",
+      "TARIFA",
+      "TAUTIRA",
+      "TEAVAROA",
+      "TEHERE",
+      "FAKARAVA_TETAMANU",
+      "THIO",
+      "TIBARAMA",
+      "TIGA",
+      "TINDUFF",
+      "TOAMASINA",
+      "TOAU",
+      "TOLIARA",
+      "TOMO_NOUVELLE_CALEDONIE",
+      "TOULON",
+      "TREBEURDEN",
+      "TREGUIER",
+      "TREHIGUIER",
+      "TREZ-HIR",
+      "TRIPOLI_LIBAN",
+      "DEAUVILLE",
+      "UALA",
+      "UTUROA",
+      "VAIARE",
+      "VAIRAO_OUTUTAATA",
+      "VAITAPE_BORA-BORA",
+      "VANNES",
+      "VAVOUTO",
+      "VIEUX-BOUCAU",
+      "WADRILLA_OUVEA",
+      "WE_LIFOU",
+      "WISSANT",
+      "YANDE",
+      "YATE"
+    ],
+    "actions": ["find_port", "refresh", "diagnostic"],
+    "scene_triggers": [
+      {
+        "key": "tide_upcoming",
+        "fields": [
+          {
+            "key": "port",
+            "options": []
+          },
+          {
+            "key": "tide",
+            "options": ["high", "low"]
+          },
+          {
+            "key": "minutes_before",
+            "options": ["0", "15", "30", "45", "60", "90", "120", "180", "240", "360"]
+          }
+        ],
+        "variables": [
+          {
+            "key": "port_name",
+            "type": "string"
+          },
+          {
+            "key": "tide",
+            "type": "string"
+          },
+          {
+            "key": "tide_time",
+            "type": "string"
+          },
+          {
+            "key": "height",
+            "type": "number"
+          },
+          {
+            "key": "coefficient",
+            "type": "number"
+          },
+          {
+            "key": "minutes_before",
+            "type": "string"
+          },
+          {
+            "key": "summary",
+            "type": "string"
+          },
+          {
+            "key": "tide_datetime",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "key": "spring_tide",
+        "fields": [
+          {
+            "key": "port",
+            "options": []
+          },
+          {
+            "key": "min_coefficient",
+            "options": ["70", "80", "90", "95", "100", "105", "110", "115"]
+          },
+          {
+            "key": "minutes_before",
+            "options": ["0", "60", "120", "180", "360", "720", "1440"]
+          }
+        ],
+        "variables": [
+          {
+            "key": "port_name",
+            "type": "string"
+          },
+          {
+            "key": "tide",
+            "type": "string"
+          },
+          {
+            "key": "tide_time",
+            "type": "string"
+          },
+          {
+            "key": "height",
+            "type": "number"
+          },
+          {
+            "key": "coefficient",
+            "type": "number"
+          },
+          {
+            "key": "minutes_before",
+            "type": "string"
+          },
+          {
+            "key": "summary",
+            "type": "string"
+          },
+          {
+            "key": "low_tide_time",
+            "type": "string"
+          },
+          {
+            "key": "low_tide_height",
+            "type": "number"
+          }
+        ]
+      }
+    ],
+    "scene_actions": [
+      {
+        "key": "get_next_tide",
+        "fields": ["port", "tide"],
+        "outputs": [
+          {
+            "key": "port_name",
+            "type": "string"
+          },
+          {
+            "key": "tide",
+            "type": "string"
+          },
+          {
+            "key": "tide_time",
+            "type": "string"
+          },
+          {
+            "key": "height",
+            "type": "number"
+          },
+          {
+            "key": "coefficient",
+            "type": "number"
+          },
+          {
+            "key": "summary",
+            "type": "string"
+          },
+          {
+            "key": "tide_datetime",
+            "type": "string"
+          },
+          {
+            "key": "minutes",
+            "type": "number"
+          },
+          {
+            "key": "current_height",
+            "type": "number"
+          },
+          {
+            "key": "trend",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "widgets": [
+      {
+        "key": "tide_today",
+        "settings": ["port"]
+      },
+      {
+        "key": "tide_list",
+        "settings": ["port"]
+      },
+      {
+        "key": "coefficients",
+        "settings": ["port"]
+      }
+    ]
+  }
+}

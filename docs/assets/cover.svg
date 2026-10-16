@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="534" viewBox="0 0 800 534">
+  <!-- Cover of the Marées France integration for Gladys Assistant
+       (illustration, not a logo of the SHOM). Built into cover.jpg by
+       scripts/build-cover.sh. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b2540"/>
+      <stop offset="1" stop-color="#123a5e"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b6fa8"/>
+      <stop offset="1" stop-color="#0a3558"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="534" fill="url(#sky)"/>
+  <!-- hour grid -->
+  <g stroke="#1d4669" stroke-width="1">
+    <path d="M0 145 H800 M0 215 H800 M0 285 H800"/>
+    <path d="M100 0 V534 M200 0 V534 M300 0 V534 M400 0 V534 M500 0 V534 M600 0 V534 M700 0 V534"/>
+  </g>
+  <!-- the water height over the day -->
+  <path d="M0 534 L0 168.3 L8 173.6 L16 179.3 L24 185.3 L32 191.6 L40 198.1 L48 204.8 L56 211.6 L64 218.4 L72 225.2 L80 231.9 L88 238.4 L96 244.7 L104 250.7 L112 256.4 L120 261.7 L128 266.6 L136 270.9 L144 274.7 L152 278.0 L160 280.7 L168 282.7 L176 284.1 L184 284.9 L192 285.0 L200 284.4 L208 283.1 L216 281.3 L224 278.8 L232 275.6 L240 272.0 L248 267.7 L256 263.0 L264 257.8 L272 252.2 L280 246.3 L288 240.1 L296 233.6 L304 226.9 L312 220.2 L320 213.4 L328 206.6 L336 199.8 L344 193.3 L352 186.9 L360 180.8 L368 175.0 L376 169.6 L384 164.7 L392 160.2 L400 156.2 L408 152.8 L416 150.0 L424 147.7 L432 146.2 L440 145.3 L448 145.0 L456 145.4 L464 146.5 L472 148.2 L480 150.5 L488 153.5 L496 157.0 L504 161.1 L512 165.7 L520 170.8 L528 176.3 L536 182.1 L544 188.3 L552 194.7 L560 201.3 L568 208.1 L576 214.9 L584 221.7 L592 228.4 L600 235.1 L608 241.5 L616 247.7 L624 253.5 L632 259.0 L640 264.1 L648 268.7 L656 272.8 L664 276.4 L672 279.4 L680 281.7 L688 283.5 L696 284.6 L704 285.0 L712 284.8 L720 283.9 L728 282.3 L736 280.1 L744 277.3 L752 273.9 L760 270.0 L768 265.5 L776 260.5 L784 255.2 L792 249.4 L800 243.3 L800 534 Z" fill="url(#sea)" fill-opacity="0.85"/>
+  <path d="M0 168.3 L8 173.6 L16 179.3 L24 185.3 L32 191.6 L40 198.1 L48 204.8 L56 211.6 L64 218.4 L72 225.2 L80 231.9 L88 238.4 L96 244.7 L104 250.7 L112 256.4 L120 261.7 L128 266.6 L136 270.9 L144 274.7 L152 278.0 L160 280.7 L168 282.7 L176 284.1 L184 284.9 L192 285.0 L200 284.4 L208 283.1 L216 281.3 L224 278.8 L232 275.6 L240 272.0 L248 267.7 L256 263.0 L264 257.8 L272 252.2 L280 246.3 L288 240.1 L296 233.6 L304 226.9 L312 220.2 L320 213.4 L328 206.6 L336 199.8 L344 193.3 L352 186.9 L360 180.8 L368 175.0 L376 169.6 L384 164.7 L392 160.2 L400 156.2 L408 152.8 L416 150.0 L424 147.7 L432 146.2 L440 145.3 L448 145.0 L456 145.4 L464 146.5 L472 148.2 L480 150.5 L488 153.5 L496 157.0 L504 161.1 L512 165.7 L520 170.8 L528 176.3 L536 182.1 L544 188.3 L552 194.7 L560 201.3 L568 208.1 L576 214.9 L584 221.7 L592 228.4 L600 235.1 L608 241.5 L616 247.7 L624 253.5 L632 259.0 L640 264.1 L648 268.7 L656 272.8 L664 276.4 L672 279.4 L680 281.7 L688 283.5 L696 284.6 L704 285.0 L712 284.8 L720 283.9 L728 282.3 L736 280.1 L744 277.3 L752 273.9 L760 270.0 L768 265.5 L776 260.5 L784 255.2 L792 249.4 L800 243.3" fill="none" stroke="#7fd3ff" stroke-width="6" stroke-linejoin="round"/>
+  <g>
+    <circle cx="189" cy="285" r="11" fill="#7fd3ff" stroke="#0b2540" stroke-width="4"/>
+    <circle cx="447" cy="145" r="11" fill="#ffd166" stroke="#0b2540" stroke-width="4"/>
+    <circle cx="705" cy="285" r="11" fill="#7fd3ff" stroke="#0b2540" stroke-width="4"/>
+  </g>
+  <!-- lighthouse -->
+  <g transform="translate(690 60)">
+    <path d="M-16 120 L-10 20 L10 20 L16 120 Z" fill="#f4f6f8"/>
+    <path d="M-14 90 H14 M-12 55 H12" stroke="#d64545" stroke-width="12"/>
+    <rect x="-13" y="2" width="26" height="18" rx="3" fill="#ffd166"/>
+    <path d="M-15 2 L0 -12 L15 2 Z" fill="#d64545"/>
+    <path d="M13 8 L80 -14 L80 30 Z" fill="#ffd166" fill-opacity="0.25"/>
+  </g>
+  <!-- title -->
+  <rect x="0" y="372" width="800" height="162" fill="#071a2d" fill-opacity="0.72"/>
+  <text x="400" y="438" fill="#ffffff" font-family="DejaVu Sans, Arial, sans-serif" font-size="58" font-weight="bold" text-anchor="middle">Marées France</text>
+  <text x="400" y="480" fill="#c8d9ea" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" text-anchor="middle">for Gladys Assistant</text>
+  <text x="400" y="514" fill="#8fb0cc" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" text-anchor="middle">High and low tides · coefficients · water height · SHOM predictions</text>
+</svg>
