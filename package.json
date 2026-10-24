@@ -1,6 +1,6 @@
 {
   "name": "gladys-marees-france",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "External Gladys Assistant integration for the tides of French harbors (SHOM): high and low tides, coefficients, water height, scenes and dashboard widgets.",
   "homepage": "https://github.com/William-De71/gladys-marees-france",

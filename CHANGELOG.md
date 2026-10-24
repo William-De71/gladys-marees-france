@@ -5,6 +5,12 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions
 follow [Semantic Versioning](https://semver.org/). This file is generated at
 each release from the Conventional Commits: do not edit it by hand.
 
+## [0.1.1] - 2026-10-24
+
+### Security
+
+- **security:** build the image on Node.js 24.22.1 or later ([2716882](https://github.com/William-De71/gladys-marees-france/commit/27168825982de6abdd7918164015724266bba09f))
+
 ## [0.1.0] - 2026-10-16
 
 ### Added
@@ -17,4 +23,5 @@ each release from the Conventional Commits: do not edit it by hand.
 - One download a day per harbor, kept in /data; states and scene events computed locally every minute, each event fired once, even after a restart; "Download now" and "Diagnostic" buttons.
 - English, French, German and Spanish everywhere: settings, devices, widgets, scenes and documentation.
 
+[0.1.1]: https://github.com/William-De71/gladys-marees-france/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/William-De71/gladys-marees-france/releases/tag/v0.1.0
