@@ -38,8 +38,8 @@ test('declares the cloud transport only: the SHOM services, over the internet', 
   assert.deepEqual([...new Set(hosts)].sort(), ['maree.shom.fr', 'services.data.shom.fr']);
 });
 
-test('requires the first Gladys accepting widgets and scenes; no extra permission', () => {
-  assert.equal(manifest.gladys_version, '>=5.1.0');
+test('requires Gladys 5.3.0 (catalog keywords and countries); no extra permission', () => {
+  assert.equal(manifest.gladys_version, '>=5.3.0');
   assert.deepEqual(manifest.categories, ['environment']);
   for (const key of ['location', 'network_wake', 'containers', 'network_discovery', 'webhooks']) {
     assert.equal(manifest[key], undefined, key);
@@ -107,4 +107,20 @@ test('offers the languages of the code, automatic by default; no decimal number 
   assert.equal(field.default, AUTO_LANGUAGE);
   assert.ok(!manifest.config_schema.some((f) => f.type === 'number'));
   assert.ok(!manifest.config_schema.some((f) => f.type === 'secret'));
+});
+
+test('catalog of Gladys 5.3.0: search keywords within the store bounds, countries', () => {
+  const { keywords } = manifest;
+  assert.ok(Array.isArray(keywords) && keywords.length >= 1 && keywords.length <= 10);
+  const normalized = keywords.map((keyword) => keyword.trim().toLowerCase());
+  for (const keyword of normalized) {
+    assert.ok(keyword.length >= 2 && keyword.length <= 30, keyword);
+  }
+  assert.equal(new Set(normalized).size, normalized.length, 'unique once trimmed and lowercased');
+  assert.ok(!normalized.includes(manifest.name.toLowerCase()), 'never the name itself');
+  assert.deepEqual(
+    manifest.countries,
+    ['FR', 'GP', 'MQ', 'GF', 'RE', 'YT', 'PM', 'BL', 'MF', 'NC', 'PF', 'WF', 'TF'],
+    'France and its overseas territories, where the SHOM publishes tides',
+  );
 });

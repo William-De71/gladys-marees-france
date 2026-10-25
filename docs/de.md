@@ -12,7 +12,7 @@ Die Vorhersagen sind Eigentum des SHOM und ersetzen keine amtlichen nautischen U
 
 ## Voraussetzungen
 
-- Gladys Assistant 5.1.0 oder neuer.
+- Gladys Assistant 5.3.0 oder neuer.
 - Internetzugang von Gladys. Kein Konto, kein Schlüssel.
 
 ## Konfiguration

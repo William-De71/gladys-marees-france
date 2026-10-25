@@ -12,7 +12,7 @@ The predictions are the property of the SHOM and do not replace official nautica
 
 ## Requirements
 
-- Gladys Assistant 5.1.0 or newer.
+- Gladys Assistant 5.3.0 or newer.
 - Internet access from Gladys. No account, no key.
 
 ## Configuration

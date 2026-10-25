@@ -5,7 +5,7 @@
 [![Licence : Apache-2.0](https://img.shields.io/badge/licence-Apache--2.0-blue.svg)](LICENSE)
 [![Dernière version](https://img.shields.io/github/v/release/William-De71/gladys-marees-france?sort=semver)](https://github.com/William-De71/gladys-marees-france/releases)
 [![CI](https://img.shields.io/github/actions/workflow/status/William-De71/gladys-marees-france/release.yml?branch=main&label=CI)](https://github.com/William-De71/gladys-marees-france/actions/workflows/release.yml)
-[![Gladys](https://img.shields.io/badge/Gladys-%E2%89%A5%205.1.0-2f6fb5)](https://gladysassistant.com)
+[![Gladys](https://img.shields.io/badge/Gladys-%E2%89%A5%205.3.0-2f6fb5)](https://gladysassistant.com)
 
 ![Marées France pour Gladys Assistant](cover.jpg)
 
@@ -100,7 +100,7 @@ Exemples :
 
 ## Prérequis
 
-- Gladys Assistant **5.1.0** ou plus récent (widgets et scènes) : les instances plus anciennes ne peuvent pas installer l’intégration.
+- Gladys Assistant **5.3.0** ou plus récent (mots-clés et pays du catalogue de Gladys 5.3, widgets et scènes) : les instances plus anciennes ne peuvent pas installer l’intégration.
 - Un accès à Internet depuis Gladys. Aucun compte, aucune clé.
 
 ## Installation

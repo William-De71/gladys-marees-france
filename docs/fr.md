@@ -12,7 +12,7 @@ Les prédictions sont la propriété du SHOM et ne remplacent pas les documents 
 
 ## Prérequis
 
-- Gladys Assistant 5.1.0 ou plus récent.
+- Gladys Assistant 5.3.0 ou plus récent.
 - Un accès à Internet depuis Gladys. Aucun compte ni clé.
 
 ## Configuration
